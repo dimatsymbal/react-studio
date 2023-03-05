@@ -1,0 +1,21 @@
+.Card_list {
+    position: relative;
+
+    .title_in_card_list {
+        width: 708px;
+        position: absolute;
+        top: 50px;
+        left: calc(50% - 708px / 2 - 0.1px);
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 45px;
+        line-height: 58px;
+        letter-spacing: 0.45px;
+        color: #141414;
+    }
+
+    .block_with_cards {
+        padding-top: 150px;
+    }
+}

@@ -1,0 +1,33 @@
+.carousel {
+  position: absolute;
+  top: 150px;
+  left: calc(50% - 500px - 0.1px);
+  height: 550px;
+  width: 1000px;
+}
+.carousel .slider_item {
+  height: 550px;
+  width: 1000px;
+}
+.carousel .slider_item .slider_img {
+  height: 550px;
+  width: 1000px;
+}
+
+@media (max-width: 900px) {
+  .carousel {
+    position: absolute;
+    top: 200px;
+    left: calc(50% - 195px - 0.1px);
+    width: 390px;
+    height: 300px;
+  }
+  .carousel .slider_item {
+    width: 390px;
+    height: 300px;
+  }
+  .carousel .slider_item .slider_img {
+    width: 390px;
+    height: 300px;
+  }
+}/*# sourceMappingURL=Slider_comp.css.map */

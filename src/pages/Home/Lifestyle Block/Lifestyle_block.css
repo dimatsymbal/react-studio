@@ -1,0 +1,159 @@
+.lifestyle_block {
+  position: relative;
+  top: 0px;
+  background: #b8effd;
+  width: 100%;
+  min-height: 836px;
+  display: flex;
+  justify-content: center;
+}
+.lifestyle_block .container_lifestyle_block {
+  width: 1200px;
+  min-height: 836px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.lifestyle_block .container_lifestyle_block .left {
+  height: 836px;
+  width: 50%;
+  position: relative;
+  display: block;
+}
+.lifestyle_block .container_lifestyle_block .left .subtitle_lifestyle_block {
+  position: absolute;
+  top: 139px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #5c8692;
+}
+.lifestyle_block .container_lifestyle_block .left .title_lifestyle_block {
+  position: absolute;
+  top: 166px;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 58px;
+  letter-spacing: 0.45px;
+  color: #141414;
+}
+.lifestyle_block .container_lifestyle_block .left .paragraph_lifestyle_block {
+  position: absolute;
+  top: 356px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 31px;
+  color: #555555;
+}
+.lifestyle_block .container_lifestyle_block .left .block_with_squears {
+  width: 100%;
+  height: 182px;
+  position: absolute;
+  top: 508px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.lifestyle_block .container_lifestyle_block .left .block_with_squears .squear {
+  width: 186px;
+  height: 182px;
+  box-sizing: border-box;
+  height: 182px;
+  left: 0%;
+  right: 0%;
+  top: 0px;
+  background: #ffffff;
+  border: 2px solid #1e2c30;
+  border-radius: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lifestyle_block .container_lifestyle_block .left .block_with_squears .squear img {
+  width: 140px;
+}
+.lifestyle_block .container_lifestyle_block .right {
+  height: 836px;
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+  position: relative;
+}
+.lifestyle_block .container_lifestyle_block .right .lifestyle_block_woman_logo {
+  position: absolute;
+  top: 140px;
+}
+
+@media (max-width: 900px) {
+  .lifestyle_block {
+    background: #b8effd;
+    top: 100px;
+  }
+  .lifestyle_block .container_lifestyle_block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .lifestyle_block .container_lifestyle_block .left {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    height: 1000px;
+  }
+  .lifestyle_block .container_lifestyle_block .left .subtitle_lifestyle_block {
+    position: absolute;
+    width: 150px;
+    left: calc(50% - 75px - 0.1px);
+  }
+  .lifestyle_block .container_lifestyle_block .left .title_lifestyle_block {
+    position: absolute;
+    top: 166px;
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 58px;
+    letter-spacing: 0.45px;
+    color: #141414;
+  }
+  .lifestyle_block .container_lifestyle_block .left .paragraph_lifestyle_block {
+    position: absolute;
+    top: 456px;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 31px;
+    color: #555555;
+  }
+  .lifestyle_block .container_lifestyle_block .left .block_with_squears {
+    width: 100%;
+    top: 708px;
+  }
+  .lifestyle_block .container_lifestyle_block .left .block_with_squears .squear {
+    width: 30%;
+  }
+  .lifestyle_block .container_lifestyle_block .left .block_with_squears .squear img {
+    width: 80%;
+  }
+  .lifestyle_block .container_lifestyle_block .right {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+  }
+  .lifestyle_block .container_lifestyle_block .right .lifestyle_block_woman_logo {
+    width: 390px;
+    height: 400px;
+    left: calc(50% - 195px - 0.1px);
+  }
+}/*# sourceMappingURL=Lifestyle_block.css.map */

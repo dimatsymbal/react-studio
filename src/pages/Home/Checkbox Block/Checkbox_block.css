@@ -1,0 +1,98 @@
+.Checkbox_block {
+  position: relative;
+  top: 0px;
+  width: 100%;
+  min-height: 836px;
+}
+.Checkbox_block .subtitle_Checkbox_block {
+  position: relative;
+  width: 217px;
+  top: 99px;
+  left: calc(50% - 108.5px - 0.1px);
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #5c8692;
+}
+.Checkbox_block .title_Checkbox_block {
+  position: relative;
+  width: 496px;
+  top: 126px;
+  left: calc(50% - 248px - 0.1px);
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 58px;
+  text-align: center;
+  letter-spacing: 0.45px;
+  color: #141414;
+}
+.Checkbox_block .checkboxes_in_block {
+  width: 1200px;
+  min-height: 520px;
+  margin: auto;
+  margin-top: 245px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.Checkbox_block .checkboxes_in_block .row {
+  visibility: visible;
+}
+.Checkbox_block .checkboxes_in_block .row .col {
+  display: block;
+  min-height: 229px;
+  min-width: 373px;
+}
+.Checkbox_block .checkboxes_in_block .row .col .img_in_col_in_checkboxBlock {
+  width: 94px;
+  height: 94px;
+}
+.Checkbox_block .checkboxes_in_block .row .col h3 {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 36px;
+  letter-spacing: 0.312px;
+  color: #141414;
+}
+.Checkbox_block .checkboxes_in_block .row .col p {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #555555;
+}
+.Checkbox_block .checkboxes_in_block #row2 {
+  visibility: visible;
+}
+.Checkbox_block .checkboxes_in_block #row2 .col {
+  display: block;
+  height: 209px;
+}
+
+@media (max-width: 900px) {
+  .Checkbox_block {
+    top: 100px;
+    width: 100%;
+  }
+  .Checkbox_block .subtitle_Checkbox_block {
+    font-size: 12px;
+  }
+  .Checkbox_block .title_Checkbox_block {
+    font-size: 35px;
+    width: 90%;
+    left: calc(5% - 0.1px);
+  }
+  .Checkbox_block .checkboxes_in_block {
+    width: 100%;
+  }
+}/*# sourceMappingURL=Checkbox_block.css.map */
