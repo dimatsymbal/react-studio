@@ -1,0 +1,12 @@
+.img_block {
+    overflow: hidden;
+}
+
+.img_block img {
+    display: block;
+    transition: transform 1s;
+}
+
+.img_block:hover img {
+    transform: scale(1.3);
+}

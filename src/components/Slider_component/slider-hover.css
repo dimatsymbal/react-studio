@@ -1,0 +1,12 @@
+.carousel {
+    overflow: hidden;
+}
+
+.carousel img {
+    display: block;
+    transition: transform 1s;
+}
+
+.carousel:hover img {
+    transform: scale(1.3);
+}

@@ -1,6 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel'
 import './Slider_comp.scss'
-
+import './slider-hover.css'
 type Props = {}
 const Slider_comp = (props: Props) => {
     return (
