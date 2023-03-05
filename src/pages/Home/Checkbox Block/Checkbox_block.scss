@@ -1,0 +1,112 @@
+.Checkbox_block {
+    position: relative;
+    top: 0px;
+    width: 100%;
+    min-height: 836px;
+
+    .subtitle_Checkbox_block {
+        position: relative;
+        width: 217px;
+        top: 99px;
+        left: calc(50% - 217px / 2 - 0.1px);
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: #5c8692;
+    }
+
+    .title_Checkbox_block {
+        position: relative;
+        width: 496px;
+        top: 126px;
+        left: calc(50% - 496px / 2 - 0.1px);
+        font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 45px;
+        line-height: 58px;
+        text-align: center;
+        letter-spacing: 0.45px;
+        color: #141414;
+    }
+
+    .checkboxes_in_block {
+        width: 1200px;
+        min-height: 520px;
+        margin: auto;
+        margin-top: 245px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .row {
+            visibility: visible;
+            .col {
+                display: block;
+                min-height: 229px;
+                min-width: 373px;
+
+                .img_in_col_in_checkboxBlock {
+                    width: 94px;
+                    height: 94px;
+                }
+
+                h3 {
+                    font-family: 'Playfair Display';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 26px;
+                    line-height: 36px;
+                    letter-spacing: 0.312px;
+                    color: #141414;
+                }
+
+                p {
+                    font-family: 'Manrope';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 27px;
+                    color: #555555;
+                }
+            }
+        }
+
+        #row2 {
+            visibility: visible;
+
+            .col {
+                display: block;
+                height: 209px;
+            }
+        }
+    }
+}
+
+// _______________________________________adaptive________________________
+
+@media (max-width: 900px) {
+    .Checkbox_block {
+        top: 100px;
+        width: 100%;
+
+        .subtitle_Checkbox_block {
+            font-size: 12px;
+        }
+
+        .title_Checkbox_block {
+            font-size: 35px;
+            width: 90%;
+            left: calc(50% - 90% / 2 - 0.1px);
+        }
+
+        .checkboxes_in_block {
+            width: 100%;
+        }
+    }
+}

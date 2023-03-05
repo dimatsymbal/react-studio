@@ -20,9 +20,26 @@ const Lifestyle_block = (props: Props) => {
                     </p>
 
                     <div className="block_with_squears">
-                        <div className="squear"></div>
-                        <div className="squear"></div>
-                        <div className="squear"></div>
+                        <div className="squear">
+                            <img
+                                src="/images/squere1_in_lifestyle_block.jpg"
+                                alt="squear1"
+                            />
+                        </div>
+                        <div className="squear">
+                            {' '}
+                            <img
+                                src="/images/squere2_in_lifestyle_block.jpg"
+                                alt="squear2"
+                            />
+                        </div>
+                        <div className="squear">
+                            {' '}
+                            <img
+                                src="/images/squere3_in_lifestyle_block.jpg"
+                                alt="squear3"
+                            />
+                        </div>
                     </div>
                 </div>
 

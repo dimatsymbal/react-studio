@@ -121,16 +121,16 @@
                 width: 100%;
                 text-align: center;
                 margin: auto;
-                height: 700px;
+                height: 600px;
 
                 .warning_logo {
                     position: absolute;
-                    top: 221px;
+                    top: 55px;
                 }
 
                 .aa111_456 {
                     position: absolute;
-                    top: 222px;
+                    top: 55px;
                     left: 40px;
                     font-family: 'Manrope';
                     font-style: normal;
@@ -145,7 +145,7 @@
                     width: 390px;
                     position: absolute;
                     left: calc(50% - 390px / 2 - 0.1px);
-                    top: 247px;
+                    top: 117px;
                     font-family: 'Playfair Display';
                     font-style: normal;
                     font-weight: 400;
@@ -158,7 +158,7 @@
                     width: 390px;
                     position: absolute;
                     left: calc(50% - 390px / 2 - 0.1px);
-                    top: 481px;
+                    top: 290px;
                     font-family: 'Manrope';
                     font-style: normal;
                     font-weight: 400;
@@ -169,6 +169,7 @@
                 .reservation_btn_guest_block {
                     position: absolute;
                     bottom: 20px;
+                    top: 500px;
                     left: calc(50% - 238px / 2 - 0.1px);
                     box-sizing: border-box;
                     width: 238px;
@@ -180,11 +181,14 @@
                 width: 100%;
                 text-align: center;
                 margin: auto;
-                height: 600px;
+                height: 400px;
+                display: flex;
+                align-items: center;
 
                 .guest_block_woman_logo {
                     width: 350px;
                     left: calc(50% - 350px / 2 - 0.1px);
+                    top: -1px;
                 }
             }
         }
