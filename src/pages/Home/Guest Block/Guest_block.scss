@@ -121,17 +121,18 @@
                 width: 100%;
                 text-align: center;
                 margin: auto;
-                height: 600px;
+                height: 500px;
 
                 .warning_logo {
                     position: absolute;
                     top: 55px;
+                    visibility: hidden;
                 }
 
                 .aa111_456 {
                     position: absolute;
                     top: 55px;
-                    left: 40px;
+                    left: calc(50% - 172px / 2 - 0.1px);
                     font-family: 'Manrope';
                     font-style: normal;
                     font-weight: 400;
@@ -169,7 +170,7 @@
                 .reservation_btn_guest_block {
                     position: absolute;
                     bottom: 20px;
-                    top: 500px;
+                    top: 400px;
                     left: calc(50% - 238px / 2 - 0.1px);
                     box-sizing: border-box;
                     width: 238px;

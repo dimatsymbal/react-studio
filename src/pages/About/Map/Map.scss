@@ -35,3 +35,27 @@
         }
     }
 }
+
+// _______________________________________adaptive________________________
+
+@media (max-width: 900px) {
+    .Map {
+        width: 100%;
+        height: 550px;
+
+        .title_Map_block {
+            visibility: visible;
+        }
+
+        .img_block {
+            width: 390px;
+            height: 300px;
+            left: calc(50% - 390px / 2 - 0.1px);
+
+            .img_map {
+                width: 390px;
+                height: 300px;
+            }
+        }
+    }
+}
