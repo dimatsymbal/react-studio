@@ -20,6 +20,16 @@
 
     .block_with_cards {
         padding-top: 150px;
+
+        .row {
+            display: flex;
+            justify-content: center;
+
+            .col {
+                display: flex;
+                justify-content: center;
+            }
+        }
     }
 }
 
@@ -28,6 +38,7 @@
 @media (max-width: 900px) {
     .Card_list {
         visibility: visible;
+        top: 10px;
 
         .title_in_card_list {
             top: 0px;
