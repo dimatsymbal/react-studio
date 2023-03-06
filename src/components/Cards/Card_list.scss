@@ -1,5 +1,8 @@
 .Card_list {
     position: relative;
+    display: block;
+    top: 100px;
+    margin-bottom: 100px;
 
     .title_in_card_list {
         width: 708px;
@@ -17,5 +20,22 @@
 
     .block_with_cards {
         padding-top: 150px;
+    }
+}
+
+// _______________________________________adaptive________________________
+
+@media (max-width: 900px) {
+    .Card_list {
+        visibility: visible;
+
+        .title_in_card_list {
+            top: 0px;
+            width: 300px;
+            left: calc(50% - 300px / 2 - 0.1px);
+            font-size: 30px;
+            line-height: normal;
+            text-align: center;
+        }
     }
 }

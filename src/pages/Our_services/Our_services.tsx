@@ -1,6 +1,6 @@
 import './Our_services.scss'
 import Card_list from 'components/Cards/Card_list'
-import Price_list from './Price_list'
+import Price_list from './Price_list/Price_list'
 
 type Props = {}
 
