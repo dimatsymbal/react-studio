@@ -5,7 +5,6 @@ import CardContent from '@mui/material/CardContent'
 import CardActions from '@mui/material/CardActions'
 import Collapse from '@mui/material/Collapse'
 import IconButton, { IconButtonProps } from '@mui/material/IconButton'
-import FavoriteIcon from '@mui/icons-material/Favorite'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import './CardListItem.scss'
 import { Button } from '@mui/material'
@@ -31,6 +30,7 @@ type Props = {
     title: string
     paragraph: string
     hide_paragraph: string
+    addProductToCart: (id: number) => void
 }
 
 const CardsListItem = ({
@@ -39,6 +39,7 @@ const CardsListItem = ({
     title,
     paragraph,
     hide_paragraph,
+    addProductToCart,
 }: Props) => {
     const [expanded, setExpanded] = React.useState(false)
 
@@ -54,11 +55,7 @@ const CardsListItem = ({
                 <p className="card-paragraph">{paragraph}</p>
             </CardContent>
             <CardActions disableSpacing>
-                <Button>add</Button>
-
-                {/* <IconButton aria-label="add to favorites">
-                    <FavoriteIcon />
-                </IconButton> */}
+                <Button onClick={() => addProductToCart(id)}>add</Button>
 
                 <ExpandMore
                     expand={expanded}

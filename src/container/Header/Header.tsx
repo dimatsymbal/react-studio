@@ -68,7 +68,7 @@ const Header = (props: Props) => {
 
                 <button className="reservation_btn_header">
                     <CalendarMonthIcon />
-                    Reservation
+                    <MenuItem to="/reservation">Reservation</MenuItem>
                 </button>
             </Toolbar>
         </AppBar>

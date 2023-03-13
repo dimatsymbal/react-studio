@@ -2,7 +2,9 @@ import CardsListItem from './CardsListItem'
 import itemsArrey from 'Utils/itemsArrey'
 import './Card_list.scss'
 
-type Props = {}
+type Props = {
+    addProductToCart: (id: number) => void
+}
 
 type Items = {
     id: number
@@ -12,7 +14,7 @@ type Items = {
     hide_paragraph: string
 }
 
-const Card_list = (props: Props) => {
+const Card_list = ({ addProductToCart }: Props) => {
     return (
         <div className="Card_list">
             <h2 className="title_in_card_list">
@@ -36,6 +38,7 @@ const Card_list = (props: Props) => {
                                     title={title}
                                     paragraph={paragraph}
                                     hide_paragraph={hide_paragraph}
+                                    addProductToCart={addProductToCart}
                                 />
                             </div>
                         )

@@ -1,0 +1,18 @@
+.Check_in_block {
+    position: relative;
+    width: 100%;
+    height: 910px;
+    background: #ebf3f5;
+
+    display: flex;
+    justify-content: center;
+
+    .container_check_in_block {
+        width: 1200px;
+        height: 100%;
+
+        .row {
+            margin-top: 110px;
+        }
+    }
+}

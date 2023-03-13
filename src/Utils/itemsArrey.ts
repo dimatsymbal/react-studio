@@ -1,4 +1,4 @@
-type Items = {
+export type Items = {
     id: number
     img: string
     title: string
@@ -62,5 +62,14 @@ const itemsArrey: Items[] = [
             'Designed to allow you to unwind and feel confident that you’re in good, caring hands. Our first priority is cleanliness. We have a full-time staff whose job is to ensure that the environment at Beautyness remains.',
     },
 ]
+
+export const getProductsObject = (array: Items[]) =>
+    array.reduce(
+        (object, item) => ({
+            ...object,
+            [item.id]: item,
+        }),
+        {}
+    )
 
 export default itemsArrey
