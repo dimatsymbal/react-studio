@@ -62,20 +62,20 @@ const Footer = (props: Props) => {
                 <div className="mainPart_footer">
                     <div className="col">
                         <h6>Explore</h6>
-                        <a href="#">Home</a>
-                        <a href="#">About</a>
-                        <a href="#">Our services</a>
-                        <a href="#">Articles</a>
-                        <a href="#">Contact Us</a>
+                        <a href="/">Home</a>
+                        <a href="/">About</a>
+                        <a href="/">Our services</a>
+                        <a href="/">Articles</a>
+                        <a href="/">Contact Us</a>
                     </div>
 
                     <div className="col">
                         <h6>Utility Pages</h6>
-                        <a href="#">Style Guide</a>
-                        <a href="#">404 Not Found</a>
-                        <a href="#">Password Protected</a>
-                        <a href="#">Licenses</a>
-                        <a href="#">Changelog </a>
+                        <a href="/">Style Guide</a>
+                        <a href="/">404 Not Found</a>
+                        <a href="/">Password Protected</a>
+                        <a href="/">Licenses</a>
+                        <a href="/">Changelog </a>
                     </div>
 
                     <div className="col">
@@ -85,7 +85,7 @@ const Footer = (props: Props) => {
                         </p>
                         <p>support@doctors.com</p>
 
-                        <a href="#">(+22) 123 - 4567 - 900</a>
+                        <a href="/">(+22) 123 - 4567 - 900</a>
                     </div>
 
                     <div className="col">

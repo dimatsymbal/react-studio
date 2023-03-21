@@ -24,7 +24,7 @@ const Header = (props: Props) => {
                 <div className="dropdown">
                     <a
                         className="btn dropdown-toggle"
-                        href="#"
+                        href="/"
                         role="button"
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
