@@ -42,9 +42,16 @@
     right: 100px;
 }
 
-.links_in_adaptive {
+.menu_in_nav {
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown {
     display: none;
 }
+
 /* ___________________________adaptive_____________________________ */
 
 @media (max-width: 900px) {
@@ -63,26 +70,28 @@
 
     .menu_in_nav,
     .call_btn_header {
+        display: none;
         visibility: hidden;
     }
 
     .reservation_btn_header {
         position: relative;
-        right: 80px;
+        right: 10px;
     }
 
-    .links_in_adaptive {
+    .dropdown {
+        position: relative;
+        right: 40px;
         display: block;
     }
-    .burger_btn_header {
-        width: 35px;
-        height: 35px;
-        align-self: center;
-        position: relative;
-        right: 90px;
-        background-color: white;
-        border: 0;
+
+    .btn {
+        width: 60px;
+        height: 40px;
+        border: 0.5px solid black;
+        border-radius: 0px;
     }
+
     .bi {
         color: #000000;
     }

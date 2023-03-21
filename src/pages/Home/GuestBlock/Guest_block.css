@@ -1,0 +1,176 @@
+.guest_block {
+  position: relative;
+  top: 105px;
+  background: #ebf3f5;
+  width: 100%;
+  min-height: 885px;
+  display: flex;
+  justify-content: center;
+}
+.guest_block .container_guides_block {
+  width: 1200px;
+  min-height: 885px;
+  display: flex;
+  flex-direction: row;
+}
+.guest_block .container_guides_block .left {
+  height: 885px;
+  width: 50%;
+  position: relative;
+}
+.guest_block .container_guides_block .left .warning_logo {
+  position: absolute;
+  top: 221px;
+  left: 0px;
+}
+.guest_block .container_guides_block .left .aa111_456 {
+  position: absolute;
+  top: 222px;
+  left: 40px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #5c8692;
+}
+.guest_block .container_guides_block .left .title_guest_block {
+  max-width: 390px;
+  position: absolute;
+  top: 247px;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 55px;
+  line-height: 72px;
+  letter-spacing: 0.66px;
+  color: #141414;
+}
+.guest_block .container_guides_block .left .paragraph_guest_block {
+  max-width: 481px;
+  position: absolute;
+  top: 481px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+  color: #555555;
+}
+.guest_block .container_guides_block .left .reservation_btn_guest_block {
+  position: absolute;
+  bottom: 229px;
+  left: 0px;
+  box-sizing: border-box;
+  width: 238px;
+  height: 57px;
+  position: absolute;
+  height: 57px;
+  background: #5c8692;
+  border: 2px solid #5c8692;
+  border-radius: 0px;
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 1.56px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.guest_block .container_guides_block .left .reservation_btn_guest_block:hover {
+  transition: 0.4s;
+  background: #4b90a2;
+}
+.guest_block .container_guides_block .right {
+  height: 885px;
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  position: relative;
+}
+.guest_block .container_guides_block .right .guest_block_woman_logo {
+  position: absolute;
+  top: 170px;
+}
+
+@media (max-width: 900px) {
+  .guest_block {
+    background: #ebf3f5;
+  }
+  .guest_block .container_guides_block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .guest_block .container_guides_block .left {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    height: 600px;
+  }
+  .guest_block .container_guides_block .left .warning_logo {
+    position: absolute;
+    top: 55px;
+  }
+  .guest_block .container_guides_block .left .aa111_456 {
+    position: absolute;
+    top: 55px;
+    left: 40px;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #5c8692;
+  }
+  .guest_block .container_guides_block .left .title_guest_block {
+    width: 390px;
+    position: absolute;
+    left: calc(50% - 195px - 0.1px);
+    top: 117px;
+    font-family: "Playfair Display";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    letter-spacing: 0.66px;
+    color: #141414;
+  }
+  .guest_block .container_guides_block .left .paragraph_guest_block {
+    width: 390px;
+    position: absolute;
+    left: calc(50% - 195px - 0.1px);
+    top: 290px;
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #555555;
+  }
+  .guest_block .container_guides_block .left .reservation_btn_guest_block {
+    position: absolute;
+    bottom: 20px;
+    top: 500px;
+    left: calc(50% - 119px - 0.1px);
+    box-sizing: border-box;
+    width: 238px;
+    height: 57px;
+  }
+  .guest_block .container_guides_block .right {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    height: 400px;
+    display: flex;
+    align-items: center;
+  }
+  .guest_block .container_guides_block .right .guest_block_woman_logo {
+    width: 350px;
+    left: calc(50% - 175px - 0.1px);
+    top: -1px;
+  }
+}/*# sourceMappingURL=Guest_block.css.map */

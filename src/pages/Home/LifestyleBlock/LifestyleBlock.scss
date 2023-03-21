@@ -1,0 +1,182 @@
+.lifestyle_block {
+    position: relative;
+    top: 0px;
+    background: #b8effd;
+    width: 100%;
+    min-height: 836px;
+
+    display: flex;
+    justify-content: center;
+
+    .container_lifestyle_block {
+        width: 1200px;
+        min-height: 836px;
+        display: flex;
+        flex-direction: row-reverse;
+
+        .left {
+            height: 836px;
+            width: 50%;
+            position: relative;
+            display: block;
+
+            .subtitle_lifestyle_block {
+                position: absolute;
+                top: 139px;
+                font-family: 'Manrope';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 22px;
+                letter-spacing: 1.5px;
+                text-transform: uppercase;
+                color: #5c8692;
+            }
+
+            .title_lifestyle_block {
+                position: absolute;
+                top: 166px;
+                font-family: 'Playfair Display';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 45px;
+                line-height: 58px;
+                letter-spacing: 0.45px;
+                color: #141414;
+            }
+
+            .paragraph_lifestyle_block {
+                position: absolute;
+                top: 356px;
+                font-family: 'Manrope';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 31px;
+                color: #555555;
+            }
+
+            .block_with_squears {
+                width: 100%;
+                height: 182px;
+                position: absolute;
+                top: 508px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .squear {
+                    width: 186px;
+                    height: 182px;
+                    box-sizing: border-box;
+                    height: 182px;
+                    left: 0%;
+                    right: 0%;
+                    top: 0px;
+                    background: #ffffff;
+                    border: 2px solid #1e2c30;
+                    border-radius: 0px;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    img {
+                        width: 140px;
+                    }
+                }
+            }
+        }
+        .right {
+            height: 836px;
+            display: flex;
+            justify-content: flex-start;
+            width: 50%;
+            position: relative;
+
+            .lifestyle_block_woman_logo {
+                position: absolute;
+                top: 140px;
+            }
+        }
+    }
+}
+
+// _______________________________________adaptive________________________
+
+@media (max-width: 900px) {
+    .lifestyle_block {
+        background: #b8effd;
+        top: 100px;
+
+        .container_lifestyle_block {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            .left {
+                width: 100%;
+                text-align: center;
+                margin: auto;
+                height: 1000px;
+
+                .subtitle_lifestyle_block {
+                    position: absolute;
+                    width: 150px;
+                    left: calc(50% - 150px / 2 - 0.1px);
+                }
+                .title_lifestyle_block {
+                    position: absolute;
+                    top: 166px;
+                    font-family: 'Playfair Display';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 45px;
+                    line-height: 58px;
+                    letter-spacing: 0.45px;
+                    color: #141414;
+                }
+
+                .paragraph_lifestyle_block {
+                    position: absolute;
+                    top: 456px;
+                    font-family: 'Manrope';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 31px;
+                    color: #555555;
+                }
+                .block_with_squears {
+                    width: 100%;
+                    top: 708px;
+
+                    .squear {
+                        width: 30%;
+
+                        img {
+                            width: 80%;
+                        }
+                    }
+                }
+            }
+
+            .right {
+                width: 100%;
+                text-align: center;
+                margin: auto;
+                height: 450px;
+
+                display: flex;
+                justify-content: center;
+
+                .lifestyle_block_woman_logo {
+                    width: 390px;
+                    height: 400px;
+                    top: -10px;
+                    left: calc(50% - 390px / 2 - 0.1px);
+                }
+            }
+        }
+    }
+}

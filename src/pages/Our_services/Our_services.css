@@ -1,0 +1,13 @@
+.Our_services {
+  position: relative;
+  top: 105px;
+  background-color: blanchedalmond;
+  min-height: 800px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.Our_services .container_Our_services {
+  width: 1200px;
+  min-height: 800px;
+}/*# sourceMappingURL=Our_services.css.map */

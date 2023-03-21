@@ -1,0 +1,87 @@
+.Text_block {
+    position: relative;
+    top: 105px;
+    background: #efecf5;
+    width: 100%;
+    min-height: 1236px;
+
+    display: flex;
+    justify-content: center;
+
+    .container_Text_block {
+        width: 1200px;
+        min-height: 1236px;
+        display: flex;
+        position: relative;
+
+        .subtitle_Text_block {
+            position: absolute;
+            width: 140px;
+            top: 50px;
+            height: 23px;
+            left: calc(50% - 140px / 2);
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 22px;
+            text-align: center;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: #5c8692;
+        }
+
+        .title_Text_block {
+            position: absolute;
+            width: 233px;
+            height: 59px;
+            left: calc(50% - 233px / 2 - 0.5px);
+            top: 80px;
+            font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 45px;
+            line-height: 58px;
+            text-align: center;
+            letter-spacing: 0.45px;
+            color: #141414;
+        }
+
+        .Text_block_content {
+            position: absolute;
+            top: 200px;
+            width: 100%;
+
+            h4 {
+                font-family: 'Playfair Display';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 26px;
+                line-height: 36px;
+                letter-spacing: 0.312px;
+                color: #141414;
+            }
+
+            p {
+                font-family: 'Manrope';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 27px;
+                color: #555555;
+            }
+        }
+    }
+}
+
+// _______________________________________adaptive________________________
+
+@media (max-width: 900px) {
+    .Text_block {
+        min-height: 2300px;
+
+        .container_Text_block {
+            min-height: 2300px;
+        }
+    }
+}
