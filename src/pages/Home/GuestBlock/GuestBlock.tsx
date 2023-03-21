@@ -1,13 +1,13 @@
-import Guest_block_woman_logo from 'components/gb_photo/gb_photo'
-import Warning_logo from 'components/Warning_logo/Warning_logo'
-import './Guest_block.scss'
+import GuestBlockPhoto from 'components/GuestBlockPhoto/GuestBlockPhoto'
+import WarningLogo from 'components/WarningLogo/WarningLogo'
+import './GuestBlock.scss'
 type Props = {}
-const Guest_block = (props: Props) => {
+const GuestBlock = (props: Props) => {
     return (
         <div className="guest_block">
             <div className="container_guides_block">
                 <div className="left">
-                    <Warning_logo />
+                    <WarningLogo />
                     <p className="aa111_456">Welcome to Beautyness!!!</p>
                     <h2 className="title_guest_block">
                         Bring The well being & beauty naturally!!!
@@ -23,10 +23,10 @@ const Guest_block = (props: Props) => {
                 </div>
 
                 <div className="right">
-                    <Guest_block_woman_logo />
+                    <GuestBlockPhoto />
                 </div>
             </div>
         </div>
     )
 }
-export default Guest_block
+export default GuestBlock

@@ -1,7 +1,7 @@
-import './Price_list.scss'
+import './PriceList.scss'
 
 type Props = {}
-const Price_list = (props: Props) => {
+const PriceList = (props: Props) => {
     return (
         <div className="Price_list">
             <h2 className="title_in_Price_list">Our services</h2>
@@ -155,4 +155,4 @@ const Price_list = (props: Props) => {
         </div>
     )
 }
-export default Price_list
+export default PriceList

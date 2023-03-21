@@ -1,10 +1,8 @@
 import CardsListItem from './CardsListItem'
 import itemsArrey from 'Utils/itemsArrey'
-import './Card_list.scss'
+import './CardList.scss'
 
-type Props = {
-    addProductToCart: (id: number) => void
-}
+type Props = {}
 
 type Items = {
     id: number
@@ -14,7 +12,7 @@ type Items = {
     hide_paragraph: string
 }
 
-const Card_list = ({ addProductToCart }: Props) => {
+const CardList = (props: Props) => {
     return (
         <div className="Card_list">
             <h2 className="title_in_card_list">
@@ -31,14 +29,13 @@ const Card_list = ({ addProductToCart }: Props) => {
                             paragraph,
                             hide_paragraph,
                         }: Items) => (
-                            <div className="col">
+                            <div className="col" key={id}>
                                 <CardsListItem
                                     id={id}
                                     img={img}
                                     title={title}
                                     paragraph={paragraph}
                                     hide_paragraph={hide_paragraph}
-                                    addProductToCart={addProductToCart}
                                 />
                             </div>
                         )
@@ -48,4 +45,4 @@ const Card_list = ({ addProductToCart }: Props) => {
         </div>
     )
 }
-export default Card_list
+export default CardList

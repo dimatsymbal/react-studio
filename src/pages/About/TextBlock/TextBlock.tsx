@@ -1,6 +1,6 @@
-import './Text_block.scss'
+import './TextBlock.scss'
 type Props = {}
-const Text_block = (props: Props) => {
+const TextBlock = (props: Props) => {
     return (
         <div className="Text_block">
             <div className="container_Text_block">
@@ -79,4 +79,4 @@ const Text_block = (props: Props) => {
         </div>
     )
 }
-export default Text_block
+export default TextBlock

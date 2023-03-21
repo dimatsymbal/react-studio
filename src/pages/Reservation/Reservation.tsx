@@ -1,15 +1,12 @@
 import './Reservation.scss'
-import Check_in_block from './Check_in_block/Check_in_block'
-
-type Props = {
-    productsInCart: {
-        [id: number]: number
-    }
-}
-const Reservation = ({ productsInCart }: Props) => {
+import CartList from './CartList/CartList'
+import { useAppSelector } from 'redux/hooks'
+type Props = {}
+const Reservation = (props: Props) => {
+    const productsInCart = useAppSelector((state) => state.productsInCart)
     return (
         <div className="Reservation">
-            <Check_in_block productsInCart={productsInCart} />
+            <CartList productsInCart={productsInCart} />
         </div>
     )
 }

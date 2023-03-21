@@ -1,7 +1,7 @@
-import './Checkbox_block.scss'
+import './CheckboxBlock.scss'
 
 type Props = {}
-const Checkbox_block = (props: Props) => {
+const CheckboxBlock = (props: Props) => {
     return (
         <div className="Checkbox_block">
             <p className="subtitle_Checkbox_block">Our Awesome Benefits</p>
@@ -93,4 +93,4 @@ const Checkbox_block = (props: Props) => {
         </div>
     )
 }
-export default Checkbox_block
+export default CheckboxBlock

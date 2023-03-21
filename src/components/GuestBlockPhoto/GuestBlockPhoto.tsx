@@ -1,14 +1,14 @@
 import guest_block_woman_logo from 'assets/guest_block_woman_logo.jpg'
 
-import './Guest_block_woman_logo.css'
+import './GuestBlockPhoto.css'
 type Props = {}
-const Guest_block_woman_logo = (props: Props) => {
+const GuestBlockPhoto = (props: Props) => {
     return (
         <img
             className="guest_block_woman_logo"
             src={guest_block_woman_logo}
-            alt="fake shop"
+            alt="guest_block_woman_logo"
         />
     )
 }
-export default Guest_block_woman_logo
+export default GuestBlockPhoto

@@ -1,8 +1,9 @@
-import './Check_in_block.scss'
+import './CartList.scss'
 import Card from 'react-bootstrap/Card'
 import FormGroup from '@mui/material/FormGroup'
 import FormControlLabel from '@mui/material/FormControlLabel'
 import Checkbox from '@mui/material/Checkbox'
+import CartListItem from './CartListItem'
 
 import itemsArrey, { getProductsObject, Items } from 'Utils/itemsArrey'
 
@@ -14,7 +15,7 @@ type Props = {
         [id: number]: Items
     }
 }
-const Check_in_block = ({
+const CartList = ({
     productsInCart,
     productsObject = getProductsObject(itemsArrey),
 }: Props) => {
@@ -23,15 +24,14 @@ const Check_in_block = ({
             <div className="container_check_in_block">
                 <div>
                     {Object.keys(productsInCart).map((articleId) => (
-                        <div key={articleId}>
-                            <Card className="cards_in_favorites">
-                                {productsObject[parseInt(articleId)].id}
-                            </Card>
-                        </div>
+                        <CartListItem
+                            key={articleId}
+                            item={productsObject[parseInt(articleId)]}
+                        />
                     ))}
                 </div>
 
-                <div className="row">
+                {/* <div className="row">
                     <div className="col">
                         <FormGroup>
                             <FormControlLabel
@@ -45,9 +45,9 @@ const Check_in_block = ({
                         </FormGroup>
                     </div>
                     <div className="col">Column</div>
-                </div>
+                </div> */}
             </div>
         </div>
     )
 }
-export default Check_in_block
+export default CartList

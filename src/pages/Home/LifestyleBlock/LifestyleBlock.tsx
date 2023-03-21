@@ -1,8 +1,8 @@
-import './Lifestyle_block.scss'
-import Lifestyle_block_woman from 'components/ls_photo/Lifestyle_block_woman'
+import './LifestyleBlock.scss'
+import LifestyleBlockWoman from 'components/LifestyleBlockPhoto/LifestyleBlockWoman'
 
 type Props = {}
-const Lifestyle_block = (props: Props) => {
+const LifestyleBlock = (props: Props) => {
     return (
         <div className="lifestyle_block">
             <div className="container_lifestyle_block">
@@ -44,10 +44,10 @@ const Lifestyle_block = (props: Props) => {
                 </div>
 
                 <div className="right">
-                    <Lifestyle_block_woman />
+                    <LifestyleBlockWoman />
                 </div>
             </div>
         </div>
     )
 }
-export default Lifestyle_block
+export default LifestyleBlock

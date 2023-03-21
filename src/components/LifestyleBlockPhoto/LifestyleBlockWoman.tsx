@@ -1,15 +1,15 @@
 import lifestyle_block_woman_logo from 'assets/lifestyle_block_woman_logo.jpg'
 
-import './Lifestyle_block_woman_logo.css'
+import './LifestyleBlockWoman.css'
 
 type Props = {}
-const Lifestyle_block_woman = (props: Props) => {
+const LifestyleBlockWoman = (props: Props) => {
     return (
         <img
             className="lifestyle_block_woman_logo"
             src={lifestyle_block_woman_logo}
-            alt="fake shop"
+            alt="lifestyle_block_woman_logo"
         />
     )
 }
-export default Lifestyle_block_woman
+export default LifestyleBlockWoman
