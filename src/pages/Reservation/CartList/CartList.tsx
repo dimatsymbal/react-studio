@@ -1,8 +1,8 @@
 import './CartList.scss'
-import Card from 'react-bootstrap/Card'
-import FormGroup from '@mui/material/FormGroup'
-import FormControlLabel from '@mui/material/FormControlLabel'
-import Checkbox from '@mui/material/Checkbox'
+// import Card from 'react-bootstrap/Card'
+// import FormGroup from '@mui/material/FormGroup'
+// import FormControlLabel from '@mui/material/FormControlLabel'
+// import Checkbox from '@mui/material/Checkbox'
 import CartListItem from './CartListItem'
 
 import itemsArrey, { getProductsObject, Items } from 'Utils/itemsArrey'
