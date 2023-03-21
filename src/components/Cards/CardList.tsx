@@ -9,7 +9,8 @@ type Items = {
     img: string
     title: string
     paragraph: string
-    hide_paragraph: string
+    price: number
+    likeCount: number
 }
 
 const CardList = (props: Props) => {
@@ -27,7 +28,8 @@ const CardList = (props: Props) => {
                             img,
                             title,
                             paragraph,
-                            hide_paragraph,
+                            price,
+                            likeCount,
                         }: Items) => (
                             <div className="col" key={id}>
                                 <CardsListItem
@@ -35,7 +37,8 @@ const CardList = (props: Props) => {
                                     img={img}
                                     title={title}
                                     paragraph={paragraph}
-                                    hide_paragraph={hide_paragraph}
+                                    price={price}
+                                    likeCount={likeCount}
                                 />
                             </div>
                         )

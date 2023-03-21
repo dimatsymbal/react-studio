@@ -3,7 +3,8 @@ export type Items = {
     img: string
     title: string
     paragraph: string
-    hide_paragraph: string
+    price: number
+    likeCount: number
 }
 
 const itemsArrey: Items[] = [
@@ -13,8 +14,8 @@ const itemsArrey: Items[] = [
         title: 'Meditation & Harmony',
         paragraph:
             'Your wellness goals and the areas of preference, then unwind with a customized massage experience.',
-        hide_paragraph:
-            'Designed to allow you to unwind and feel confident that you’re in good, caring hands. Our first priority is cleanliness. We have a full-time staff whose job is to ensure that the environment at Beautyness remains.',
+        price: 399,
+        likeCount: 421,
     },
     {
         id: 2,
@@ -22,8 +23,8 @@ const itemsArrey: Items[] = [
         title: 'Body Treatments',
         paragraph:
             'Combining skin-type-specific cleansing & toning, exfoliation, deep-pore cleansing extractions customized ',
-        hide_paragraph:
-            'Designed to allow you to unwind and feel confident that you’re in good, caring hands. Our first priority is cleanliness. We have a full-time staff whose job is to ensure that the environment at Beautyness remains.',
+        price: 249,
+        likeCount: 567,
     },
     {
         id: 3,
@@ -31,8 +32,8 @@ const itemsArrey: Items[] = [
         title: 'Hair & Beauty',
         paragraph:
             'Offers therapeutic benefits such as relief of muscle tension and increased circulation to the areas worked..',
-        hide_paragraph:
-            'Designed to allow you to unwind and feel confident that you’re in good, caring hands. Our first priority is cleanliness. We have a full-time staff whose job is to ensure that the environment at Beautyness remains.',
+        price: 449,
+        likeCount: 346,
     },
     {
         id: 4,
@@ -40,8 +41,8 @@ const itemsArrey: Items[] = [
         title: 'Skin program',
         paragraph:
             'Offers therapeutic benefits such as relief of muscle tension and increased circulation to the areas worked..',
-        hide_paragraph:
-            'Designed to allow you to unwind and feel confident that you’re in good, caring hands. Our first priority is cleanliness. We have a full-time staff whose job is to ensure that the environment at Beautyness remains.',
+        price: 399,
+        likeCount: 596,
     },
     {
         id: 5,
@@ -49,8 +50,8 @@ const itemsArrey: Items[] = [
         title: 'Thai massage & Relax',
         paragraph:
             'Offers therapeutic benefits such as relief of muscle tension and increased circulation to the areas worked..',
-        hide_paragraph:
-            'Designed to allow you to unwind and feel confident that you’re in good, caring hands. Our first priority is cleanliness. We have a full-time staff whose job is to ensure that the environment at Beautyness remains.',
+        price: 850,
+        likeCount: 824,
     },
     {
         id: 6,
@@ -58,8 +59,8 @@ const itemsArrey: Items[] = [
         title: 'Sauna & Calmness',
         paragraph:
             'Offers therapeutic benefits such as relief of muscle tension and increased circulation to the areas worked..',
-        hide_paragraph:
-            'Designed to allow you to unwind and feel confident that you’re in good, caring hands. Our first priority is cleanliness. We have a full-time staff whose job is to ensure that the environment at Beautyness remains.',
+        price: 1150,
+        likeCount: 1144,
     },
 ]
 
