@@ -12,21 +12,21 @@ import { useState } from 'react'
 
 type Props = {
     id: number
-    img: string
+    image: string
     title: string
     paragraph: string
     price: number
-    likeCount: number
+    likes: number
     addProductToCart?: (id: number) => void
 }
 
 const CardsListItem = ({
     id,
-    img,
+    image,
     title,
     paragraph,
     price,
-    likeCount,
+    likes,
 }: Props) => {
     const isLiked = useAppSelector((state) => state.productsLikeState[id])
     const dispatch = useAppDispatch()
@@ -41,11 +41,11 @@ const CardsListItem = ({
         setLikeCountr(1)
     }
 
-    const finalLikeCount = likeCount + likeCounter
+    const finalLikeCount = likes + likeCounter
 
     return (
         <Card className="Card">
-            <img className="Card-img" src={img} alt="lost img" />
+            <img className="Card-img" src={image} alt="lost img" />
             <CardContent>
                 <h2 className="card-title">{title}</h2>
                 <p className="card-paragraph">{paragraph}</p>

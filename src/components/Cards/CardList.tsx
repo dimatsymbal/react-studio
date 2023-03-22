@@ -1,19 +1,20 @@
 import CardsListItem from './CardsListItem'
-import itemsArrey from 'Utils/itemsArrey'
 import './CardList.scss'
+import { useAppSelector } from 'redux/hooks'
 
 type Props = {}
 
 type Items = {
     id: number
-    img: string
+    image: string
     title: string
     paragraph: string
     price: number
-    likeCount: number
+    likes: number
 }
 
 const CardList = (props: Props) => {
+    const itemsArrey = useAppSelector((state) => state.items)
     return (
         <div className="Card_list">
             <h2 className="title_in_card_list">
@@ -25,20 +26,20 @@ const CardList = (props: Props) => {
                     {itemsArrey.map(
                         ({
                             id,
-                            img,
+                            image,
                             title,
                             paragraph,
                             price,
-                            likeCount,
+                            likes,
                         }: Items) => (
                             <div className="col" key={id}>
                                 <CardsListItem
                                     id={id}
-                                    img={img}
+                                    image={image}
                                     title={title}
                                     paragraph={paragraph}
                                     price={price}
-                                    likeCount={likeCount}
+                                    likes={likes}
                                 />
                             </div>
                         )

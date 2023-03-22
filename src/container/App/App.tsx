@@ -5,10 +5,18 @@ import Home from 'pages/Home/Home'
 import OurServices from 'pages/Our_services/OurServices'
 import Reservation from 'pages/Reservation/Reservation'
 import { Route, Routes } from 'react-router-dom'
+import { useAppDispatch } from 'redux/hooks'
+import { useEffect } from 'react'
+import { fetchItems } from 'redux/itemReducer'
 
 type Props = {}
 
 const App = (props: Props) => {
+    const dispatch = useAppDispatch()
+
+    useEffect(() => {
+        dispatch(fetchItems())
+    })
     return (
         <>
             <Header />
