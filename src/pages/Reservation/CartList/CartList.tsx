@@ -1,6 +1,6 @@
 import './CartList.scss'
 import CartListItem from './CartListItem'
-import itemsArrey, { getProductsObject, Items } from 'Utils/itemsArrey'
+import { getProductsObject, Items } from 'Utils/itemsArrey'
 import { useAppSelector } from 'redux/hooks'
 
 type ProductsObject = {
