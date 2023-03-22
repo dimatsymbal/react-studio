@@ -8,6 +8,7 @@ import Menu from 'components/Menu/Menu'
 import Logo from 'components/Logo/Logo'
 import { Button } from '@mui/material'
 import MenuItem from 'components/Menu/MenuItem'
+import { Link } from 'react-router-dom'
 
 type Props = {}
 const Header = (props: Props) => {
@@ -31,8 +32,8 @@ const Header = (props: Props) => {
                     >
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
-                            width="16"
-                            height="16"
+                            width="30"
+                            height="30"
                             fill="currentColor"
                             className="bi bi-list"
                             viewBox="0 0 16 16"
@@ -68,7 +69,9 @@ const Header = (props: Props) => {
 
                 <button className="reservation_btn_header">
                     <CalendarMonthIcon />
-                    <MenuItem to="/reservation">Reservation</MenuItem>
+                    <Link className="reservationLink" to="/reservation">
+                        Reservation
+                    </Link>
                 </button>
             </Toolbar>
         </AppBar>

@@ -17,8 +17,7 @@
         color: #141414;
     }
 
-    .card-paragraph,
-    .hide-card-paragraph {
+    .card-paragraph {
         font-family: 'Manrope';
         font-style: normal;
         font-weight: 400;
@@ -27,6 +26,17 @@
         letter-spacing: 0.36px;
 
         color: #555555;
+    }
+
+    .card_actions_div {
+        display: flex;
+        justify-content: space-between;
+
+        .likeBtn {
+            display: flex;
+            justify-content: space-between;
+            width: 90px;
+        }
     }
 }
 

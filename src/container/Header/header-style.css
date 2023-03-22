@@ -37,6 +37,11 @@
     background: #4b90a2;
 }
 
+.reservationLink {
+    color: white;
+    text-decoration: none;
+}
+
 .call_btn_header {
     position: relative;
     right: 100px;
@@ -79,6 +84,11 @@
         right: 10px;
     }
 
+    .reservationLink {
+        color: white;
+        text-decoration: none;
+    }
+
     .dropdown {
         position: relative;
         right: 40px;
@@ -88,11 +98,12 @@
     .btn {
         width: 60px;
         height: 40px;
-        border: 0.5px solid black;
+
         border-radius: 0px;
     }
 
     .bi {
+        width: 50px;
         color: #000000;
     }
 }

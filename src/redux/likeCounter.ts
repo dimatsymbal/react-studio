@@ -8,8 +8,7 @@ type likeProductsType = {
 //ОПИС СТРУКТУРИ ЯК БУДУТЬ ЗБЕРІГАТЬСЯ
 //опис значення за замовчуванням
 export const initialState: likeProductsType = {
-    1: true,
-    2: true,
+    1: false,
 }
 
 //СТВОРЕННЯ СЛАЙСУ

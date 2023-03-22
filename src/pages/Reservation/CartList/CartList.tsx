@@ -1,24 +1,20 @@
 import './CartList.scss'
-// import Card from 'react-bootstrap/Card'
-// import FormGroup from '@mui/material/FormGroup'
-// import FormControlLabel from '@mui/material/FormControlLabel'
-// import Checkbox from '@mui/material/Checkbox'
 import CartListItem from './CartListItem'
-
 import itemsArrey, { getProductsObject, Items } from 'Utils/itemsArrey'
+import { useAppSelector } from 'redux/hooks'
+
+type ProductsObject = {
+    [id: number]: Items
+}
 
 type Props = {
     productsInCart: {
         [id: number]: number
     }
-    productsObject?: {
-        [id: number]: Items
-    }
 }
-const CartList = ({
-    productsInCart,
-    productsObject = getProductsObject(itemsArrey),
-}: Props) => {
+const CartList = ({ productsInCart }: Props) => {
+    const itemsArrey = useAppSelector((state) => state.items)
+    const productsObject: ProductsObject = getProductsObject(itemsArrey)
     return (
         <div className="Check_in_block">
             <div className="container_check_in_block">
@@ -30,6 +26,15 @@ const CartList = ({
                         />
                     ))}
                 </div>
+                {/* <div>
+                    Total:
+                    {Object.keys(productsInCart).reduce(
+                        (total, articleId) =>
+                            total +
+                            productsObject[parseInt(articleId)].price *
+                                productsInCart[parseInt(articleId)]
+                    )}
+                </div> */}
 
                 {/* <div className="row">
                     <div className="col">
