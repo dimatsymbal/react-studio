@@ -1,6 +1,6 @@
 import './CartList.scss'
 import CartListItem from './CartListItem'
-import itemsArrey, { getProductsObject, Items } from 'Utils/itemsArrey'
+import { getProductsObject, Items } from 'Utils/itemsArrey'
 import { useAppSelector } from 'redux/hooks'
 
 type ProductsObject = {
@@ -16,14 +16,16 @@ const CartList = ({ productsInCart }: Props) => {
     const itemsArrey = useAppSelector((state) => state.items)
     const productsObject: ProductsObject = getProductsObject(itemsArrey)
     return (
-        <div className="Check_in_block">
-            <div className="container_check_in_block">
-                <div>
+        <div className="CartList">
+            <div className="CartListContainer">
+                <div className="row">
                     {Object.keys(productsInCart).map((articleId) => (
-                        <CartListItem
-                            key={articleId}
-                            item={productsObject[parseInt(articleId)]}
-                        />
+                        <div className="col-6">
+                            <CartListItem
+                                key={articleId}
+                                item={productsObject[parseInt(articleId)]}
+                            />
+                        </div>
                     ))}
                 </div>
                 {/* <div>

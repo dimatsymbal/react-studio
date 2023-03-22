@@ -1,18 +1,41 @@
-.Check_in_block {
+.CartList {
     position: relative;
     width: 100%;
-    height: 910px;
+    min-height: 0px;
     background: #ebf3f5;
-
     display: flex;
     justify-content: center;
 
-    .container_check_in_block {
+    .CartListContainer {
         width: 1200px;
         height: 100%;
 
         .row {
-            margin-top: 110px;
+            margin-top: 50px;
+        }
+    }
+}
+
+// _____________________adaptive___________________________
+
+@media (max-width: 900px) {
+    .CartList {
+        visibility: visible;
+        width: 100%;
+
+        .CartListContainer {
+            visibility: visible;
+            width: 100%;
+
+            .row {
+                width: 390px;
+                display: flex;
+                flex-direction: column;
+
+                .col {
+                    width: 390px;
+                }
+            }
         }
     }
 }
