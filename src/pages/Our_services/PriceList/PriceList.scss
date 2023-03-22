@@ -149,10 +149,12 @@
 
                 .col {
                     visibility: visible;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
 
                     .price_list_img {
                         width: 380px;
-
                         height: 390px;
                     }
 
