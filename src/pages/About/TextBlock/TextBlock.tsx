@@ -65,11 +65,6 @@ const TextBlock = (props: Props) => {
                         Nam scelerisque tristique dolor vitae tincidunt. Aenean
                         quis massa uada mi elementum elementum. Nec sapien
                         convallis vulputate rhoncus vel dui. <br /> <br />
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Integer adipiscing erat eget risus sollicitudin
-                        pellentesque et non erat. Maecenas nibh dolor, malesuada
-                        et bibendum a, sagittis accumsan ipsum. Pellentesque
-                        ultrices ultrices sapien, nec tincidunt nunc posuere ut.
                     </p>
 
                     <br />

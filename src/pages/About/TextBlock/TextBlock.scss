@@ -1,6 +1,5 @@
 .Text_block {
     position: relative;
-    top: 105px;
     background: #efecf5;
     width: 100%;
     min-height: 1236px;
@@ -78,10 +77,12 @@
 
 @media (max-width: 900px) {
     .Text_block {
-        min-height: 2000px;
+        height: 2005px;
+        bottom: 0px;
+        background: #efecf5;
 
         .container_Text_block {
-            min-height: 2000px;
+            height: 2000px;
         }
     }
 }

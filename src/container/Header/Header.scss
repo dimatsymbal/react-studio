@@ -1,0 +1,129 @@
+.header {
+    width: 100%;
+    height: 105px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    position: fixed;
+    z-index: 250;
+    background-color: white;
+
+    .header_container {
+        width: 98%;
+        height: 105px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row;
+
+        .call_btn_header {
+            margin-right: 100px;
+        }
+
+        .slideMenu {
+            visibility: hidden;
+        }
+
+        .reservation_btn_header {
+            box-sizing: border-box;
+            height: 59px;
+            width: 201px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background: #5c8692;
+            border: 2px solid #5c8692;
+            border-radius: 0px;
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            letter-spacing: 1.4px;
+            text-transform: uppercase;
+            cursor: pointer;
+            color: white;
+
+            .reservationLink {
+                color: white;
+                text-decoration: none;
+            }
+        }
+
+        .reservation_btn_header:hover {
+            transition: 0.4s;
+            background: #4b90a2;
+        }
+    }
+}
+
+// _______________________________adaptive__________________________
+
+@media (max-width: 900px) {
+    .header {
+        width: 100%;
+        height: 105px;
+        display: block;
+
+        .header_container {
+            width: 100%;
+            height: 105px;
+            display: block;
+            position: relative;
+
+            .call_btn_header {
+                visibility: hidden;
+            }
+
+            .logo_header {
+                width: 130px;
+                height: 23px;
+                position: absolute;
+                top: calc(50% - 23px / 2);
+                left: 5%;
+            }
+
+            .menu_in_nav {
+                visibility: hidden;
+            }
+
+            .slideMenu {
+                visibility: visible;
+                position: absolute;
+                right: calc(50% - 35px / 2);
+                width: 35px;
+                height: 35px;
+                border: 1px solid black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                svg {
+                    color: black;
+                }
+            }
+
+            .reservation_btn_header {
+                position: absolute;
+                height: 59px;
+                width: 121px;
+                font-weight: 400;
+                font-size: 11px;
+                line-height: 21px;
+                top: calc(50% - 59px / 2);
+                right: 5%;
+
+                .reservationLink {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+
+            .reservation_btn_header:hover {
+                transition: 0.4s;
+                background: #4b90a2;
+            }
+        }
+    }
+}

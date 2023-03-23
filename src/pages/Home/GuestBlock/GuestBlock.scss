@@ -1,10 +1,8 @@
 .guest_block {
     position: relative;
-    top: 105px;
     background: #ebf3f5;
     width: 100%;
     min-height: 885px;
-
     display: flex;
     justify-content: center;
 
@@ -111,6 +109,7 @@
 @media (max-width: 900px) {
     .guest_block {
         background: #ebf3f5;
+        width: 100%;
 
         .container_guides_block {
             width: 100%;

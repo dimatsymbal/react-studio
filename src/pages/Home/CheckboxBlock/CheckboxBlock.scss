@@ -90,9 +90,8 @@
 
 // _______________________________________adaptive________________________
 
-@media (max-width: 900px) {
+@media (max-width: 1250px) {
     .Checkbox_block {
-        top: 100px;
         width: 100%;
 
         .subtitle_Checkbox_block {
@@ -107,6 +106,14 @@
 
         .checkboxes_in_block {
             width: 100%;
+
+            .row {
+                width: 90%;
+
+                .col {
+                    width: 90%;
+                }
+            }
         }
     }
 }

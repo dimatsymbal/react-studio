@@ -1,14 +1,11 @@
 .Price_list {
-    position: relative;
-    min-height: 1300px;
-    margin-bottom: 100px;
     width: 100%;
+    margin-bottom: 100px;
 
     .title_in_Price_list {
-        position: absolute;
         width: 266px;
-        top: 50px;
-        left: calc(50% - 266px / 2 - 0.1px);
+        margin-top: 50px;
+        margin-left: calc(50% - 266px / 2 - 0.1px);
         font-family: 'Playfair Display';
         font-style: normal;
         font-weight: 400;
@@ -20,8 +17,7 @@
     }
 
     .Price_list_content_block {
-        position: absolute;
-        top: 150px;
+        margin-top: 50px;
 
         .row {
             visibility: visible;
@@ -30,8 +26,15 @@
                 visibility: visible;
 
                 .price_list_img {
+                    margin-left: calc(50% - 609px / 2 - 0.1px);
                     height: 650px;
                     width: 609px;
+                }
+
+                .price_list_img4 {
+                    height: 650px;
+                    width: 609px;
+                    padding-left: 17px;
                 }
 
                 .spisok {
@@ -139,13 +142,17 @@
 
 @media (max-width: 900px) {
     .Price_list {
-        margin-bottom: 1200px;
+        margin-bottom: 100px;
+        width: 100%;
 
         .Price_list_content_block {
             visibility: visible;
 
             .row {
                 visibility: visible;
+                width: 380px;
+                display: flex;
+                justify-content: center;
 
                 .col {
                     visibility: visible;
@@ -153,9 +160,12 @@
                     justify-content: center;
                     flex-direction: column;
 
-                    .price_list_img {
+                    .price_list_img,
+                    .price_list_img4 {
                         width: 380px;
                         height: 390px;
+                        margin-left: 5px;
+                        padding: 0px;
                     }
 
                     .spisok {
@@ -170,6 +180,7 @@
                     .btn_under_list_in_col {
                         margin-top: 0px;
                         margin: auto;
+                        display: none;
                     }
 
                     .btn_under_list_in_col2 {
