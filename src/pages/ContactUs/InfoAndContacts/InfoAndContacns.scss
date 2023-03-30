@@ -1,0 +1,150 @@
+.InfoAndContacns {
+    min-height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 105px;
+    background-color: rgb(238, 239, 221);
+
+    .container {
+        min-height: 700px;
+        width: 1200px;
+
+        .row {
+            margin-bottom: 50px;
+            .col {
+                p {
+                    font-family: 'Manrope';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 27px;
+                    letter-spacing: 0.36px;
+                    color: #555555;
+                    margin: auto;
+                }
+
+                h4 {
+                    font-family: 'Playfair Display';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 25px;
+                    color: #141414;
+                    margin-top: 10px;
+                    margin-bottom: 50px;
+                }
+
+                a {
+                    font-family: 'Playfair Display';
+                    font-style: italic;
+                    font-weight: 400;
+                    font-size: 20px;
+                    line-height: 27px;
+                    letter-spacing: 0.36px;
+                    color: #555555;
+                    margin: auto;
+                    text-decoration: none;
+                }
+                a:hover {
+                    text-decoration: underline;
+                }
+
+                .workFormBtn {
+                    margin-top: 30px;
+                    margin-right: auto;
+                    border: 2px solid #5c8692;
+                    background: #ffffff;
+                    border-radius: 0px;
+                    box-sizing: border-box;
+                    height: 57px;
+                    width: 248px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: 'Manrope';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 20px;
+                    text-align: center;
+                    letter-spacing: 1.56px;
+                    text-transform: uppercase;
+                    color: #141414;
+                }
+
+                .workFormBtn:hover {
+                    background-color: #accbd4;
+                    transition: 0.4s;
+                }
+            }
+        }
+
+        h2 {
+            font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 45px;
+            line-height: 58px;
+            text-align: center;
+            letter-spacing: 0.45px;
+            color: #141414;
+            margin-top: 10px;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+// _______________________________________adaptive________________________
+
+@media (max-width: 900px) {
+    .InfoAndContacns {
+        width: 100%;
+        padding: 0px;
+
+        .container {
+            width: 100%;
+
+            h2 {
+                margin-top: 50px;
+                width: 300px;
+                margin-left: calc(50% - 300px / 2 - 0.1px);
+                font-size: 30px;
+                line-height: normal;
+                text-align: center;
+            }
+
+            .row {
+                visibility: visible;
+
+                .col {
+                    visibility: visible;
+
+                    img {
+                        width: 365px;
+                        margin: auto;
+                    }
+
+                    h2 {
+                        font-size: 35px;
+                        line-height: 38px;
+                    }
+
+                    h4 {
+                        font-family: 'Playfair Display';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 25px;
+                        color: #141414;
+                        margin-top: 10px;
+                        margin-bottom: 50px;
+                        text-align: center;
+                    }
+
+                    .workFormBtn {
+                        margin: auto;
+                    }
+                }
+            }
+        }
+    }
+}

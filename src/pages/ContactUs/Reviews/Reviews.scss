@@ -1,0 +1,311 @@
+.Reviews {
+    min-height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    background-color: rgb(246, 231, 244);
+
+    .container {
+        min-height: 700px;
+        width: 1200px;
+
+        .subtitles {
+            margin: auto;
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 22px;
+            text-align: center;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: #5c8692;
+        }
+
+        h2 {
+            margin-top: 50px;
+            font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 45px;
+            line-height: 58px;
+            text-align: center;
+            letter-spacing: 0.45px;
+            color: #141414;
+        }
+
+        .reviewsBlock {
+            height: 300px;
+            position: relative;
+            width: 1200px;
+
+            .carouselReviewsBlock {
+                width: 700px;
+                min-height: 250px;
+                position: relative;
+                left: calc(50% - 700px / 2);
+                top: 50px;
+
+                .carousel-indicators {
+                    display: block;
+                    position: absolute;
+                    top: 0px;
+                    display: flex;
+                    justify-content: center;
+                }
+
+                .carousel-control-prev,
+                .carousel-control-next {
+                    display: none;
+                }
+
+                .carouselReviewsBlockItem {
+                    width: 700px;
+                    min-height: 250px;
+                    background: #ffffff;
+
+                    .topPartInReview {
+                        min-height: 200px;
+
+                        .textReview {
+                            font-family: 'Manrope';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 19px;
+                            line-height: 32px;
+                            max-width: 680px;
+                            color: #141414;
+                            padding-left: 10px;
+                            padding-top: 20px;
+                            padding-right: 10px;
+                        }
+                    }
+
+                    .lowerPartInReview {
+                        position: absolute;
+                        bottom: -1px;
+                        background: #1e2c30;
+                        width: 700px;
+                        height: 70px;
+                        padding: 5px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+
+                        h4 {
+                            font-family: 'Playfair Display';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 20px;
+                            line-height: 24px;
+                            letter-spacing: 0.24px;
+                            color: #ffffff;
+                        }
+
+                        p {
+                            font-family: 'Manrope';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 14px;
+                            line-height: 21px;
+                            letter-spacing: 0.42px;
+                            color: #ffffff;
+                        }
+
+                        #reviewsImg {
+                            width: 70px;
+                        }
+                        #reviewsImg:hover {
+                            width: 70px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .form {
+            height: 450px;
+            width: 1200px;
+
+            form {
+                width: 700px;
+                margin-left: calc(50% - 700px / 2);
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+            }
+
+            .firstTwoInputs {
+                margin-top: 50px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            input {
+                background: #ffffff;
+                border: 2px solid #5c8692;
+                border-radius: 0px;
+                width: 300px;
+                height: 40px;
+                margin-bottom: 20px;
+            }
+
+            input::placeholder {
+                font-family: 'Manrope';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 32px;
+                color: #141414;
+            }
+
+            textarea {
+                background: #ffffff;
+                border: 2px solid #5c8692;
+                border-radius: 0px;
+                margin-bottom: 20px;
+            }
+
+            textarea::placeholder {
+                font-family: 'Manrope';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 32px;
+                color: #141414;
+            }
+
+            .reviewsSubmitBtn {
+                border: 2px solid #5c8692;
+                background: #ffffff;
+                border-radius: 0px;
+                box-sizing: border-box;
+                height: 57px;
+                width: 248px;
+                margin-left: calc(50% - 248px / 2);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Manrope';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 20px;
+                text-align: center;
+                letter-spacing: 1.56px;
+                text-transform: uppercase;
+                color: #141414;
+            }
+
+            .reviewsSubmitBtn:hover {
+                background-color: #accbd4;
+                transition: 0.4s;
+            }
+        }
+    }
+}
+
+// _______________________________________adaptive________________________
+
+@media (max-width: 900px) {
+    .Reviews {
+        width: 100%;
+
+        .container {
+            width: 100%;
+
+            h2 {
+                width: 300px;
+                margin-left: calc(50% - 300px / 2 - 0.1px);
+                font-size: 30px;
+                line-height: normal;
+                text-align: center;
+            }
+
+            .subtitles {
+                margin: auto;
+            }
+
+            .reviewsBlock {
+                width: 100%;
+
+                .carouselReviewsBlock {
+                    width: 390px;
+                    left: calc(50% - 390px / 2);
+
+                    .carouselReviewsBlockItem {
+                        width: 390px;
+
+                        .topPartInReview {
+                            height: 300px;
+
+                            .textReview {
+                                font-size: 14px;
+                                line-height: 25px;
+                            }
+                        }
+
+                        .lowerPartInReview {
+                            position: absolute;
+                            bottom: -1px;
+                            background: #1e2c30;
+                            width: 390px;
+                            height: 70px;
+                            padding: 5px;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                        }
+                    }
+                }
+            }
+
+            .form {
+                width: 100%;
+                height: 500px;
+
+                form {
+                    width: 390px;
+                    margin-left: calc(50% - 390px / 2);
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: column;
+
+                    h2 {
+                        margin-top: 100px;
+                        width: 300px;
+                        margin-left: calc(50% - 300px / 2 - 0.1px);
+                        font-size: 30px;
+                        line-height: normal;
+                        text-align: center;
+                    }
+                }
+
+                .firstTwoInputs {
+                    margin-top: 50px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    input {
+                        background: #ffffff;
+                        border: 2px solid #5c8692;
+                        border-radius: 0px;
+                        width: 350px;
+                        height: 40px;
+                        margin-bottom: 20px;
+                    }
+                }
+
+                textarea {
+                    width: 350px;
+                    margin-left: calc(50% - 350px / 2);
+                }
+            }
+        }
+    }
+}
