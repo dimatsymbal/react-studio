@@ -2,11 +2,11 @@
     overflow: hidden;
 }
 
-.carousel img {
+.carousel .slider_img {
     display: block;
     transition: transform 1s;
 }
 
-.carousel:hover img {
+.carousel:hover .slider_img {
     transform: scale(1.3);
 }

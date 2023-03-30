@@ -29,12 +29,13 @@
                     margin-left: calc(50% - 609px / 2 - 0.1px);
                     height: 650px;
                     width: 609px;
+                    margin: 0px;
                 }
 
                 .price_list_img4 {
                     height: 650px;
                     width: 609px;
-                    padding-left: 17px;
+                    padding-left: 15px;
                 }
 
                 .spisok {
@@ -161,6 +162,7 @@
                     flex-direction: column;
 
                     .price_list_img,
+                    .price_list_img3,
                     .price_list_img4 {
                         width: 380px;
                         height: 390px;

@@ -8,6 +8,7 @@ import { Route, Routes } from 'react-router-dom'
 import { useAppDispatch } from 'redux/hooks'
 import { useEffect } from 'react'
 import { fetchItems } from 'redux/itemReducer'
+import ContactUs from 'pages/ContactUs/ContactUs'
 
 type Props = {}
 
@@ -24,6 +25,7 @@ const App = (props: Props) => {
                 <Route path="/" element={<Home />} />
                 <Route path="about" element={<About />} />
                 <Route path="services" element={<OurServices />} />
+                <Route path="contactus" element={<ContactUs />} />
                 <Route path="reservation" element={<Reservation />} />
             </Routes>
             <Footer />
