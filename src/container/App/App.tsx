@@ -6,13 +6,33 @@ import OurServices from 'pages/Our_services/OurServices'
 import Reservation from 'pages/Reservation/Reservation'
 import { Route, Routes } from 'react-router-dom'
 import { useAppDispatch } from 'redux/hooks'
-import { useEffect } from 'react'
-import { fetchItems } from 'redux/itemReducer'
+import { useEffect, useState } from 'react'
+import { fetchItems } from 'redux/CardListRedux/itemReducer'
 import ContactUs from 'pages/ContactUs/ContactUs'
 
 type Props = {}
 
+type PriceListData = {
+    totalPrice: number
+}
+
 const App = (props: Props) => {
+    const [priceData, setPriceData] = useState<PriceListData>({
+        totalPrice: 0,
+    })
+
+    const checkToCart = (price: number) => {
+        setPriceData((prevState) => ({
+            totalPrice: prevState.totalPrice + price,
+        }))
+    }
+
+    const uncheckFromCart = (price: number) => {
+        setPriceData((prevState) => ({
+            totalPrice: prevState.totalPrice - price,
+        }))
+    }
+
     const dispatch = useAppDispatch()
 
     useEffect(() => {
@@ -24,9 +44,26 @@ const App = (props: Props) => {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="about" element={<About />} />
-                <Route path="services" element={<OurServices />} />
+                <Route
+                    path="services"
+                    element={
+                        <OurServices
+                            checkToCart={checkToCart}
+                            uncheckFromCart={uncheckFromCart}
+                        />
+                    }
+                />
                 <Route path="contactus" element={<ContactUs />} />
-                <Route path="reservation" element={<Reservation />} />
+                <Route
+                    path="reservation"
+                    element={
+                        <Reservation
+                            priceData={priceData}
+                            checkToCart={checkToCart}
+                            uncheckFromCart={uncheckFromCart}
+                        />
+                    }
+                />
             </Routes>
             <Footer />
         </>

@@ -44,6 +44,10 @@
                     .spisok_element {
                         height: 93px;
 
+                        .checkboxToCart {
+                            display: none;
+                        }
+
                         .element_of_price_list {
                             width: 100%;
                             height: 33px;
