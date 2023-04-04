@@ -7,6 +7,8 @@ import Divider from '@mui/material/Divider'
 import { Link } from 'react-router-dom'
 import MenuItem from 'components/Menu/MenuItem'
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth'
+import './AdaptiveHeaderBtn.scss'
+import CallIcon from '@mui/icons-material/Call'
 
 type Anchor = 'top' | 'left' | 'bottom' | 'right'
 
@@ -61,8 +63,15 @@ export default function TemporaryDrawer() {
                     <MenuItem to="/contactus">Contact Us</MenuItem>
                 ))}
             </List>
-            <Divider />
             <List>
+                <Button className="call_btn_header">
+                    {' '}
+                    <CallIcon /> Call Us - (+22) 123 456 7890
+                </Button>
+            </List>
+            <Divider />
+            <Divider />
+            <List className="listForBtn">
                 {['Cart'].map(() => (
                     <button className="reservation_btn_header">
                         <CalendarMonthIcon />
