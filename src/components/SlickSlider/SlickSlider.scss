@@ -1,0 +1,53 @@
+.sliderSlickBlock {
+    position: relative;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(234, 224, 244);
+    width: 100%;
+
+    .sliderSlick {
+        margin-top: 100px;
+        width: 1200px;
+        height: 500px;
+
+        div {
+            width: 1200px;
+            height: 500px;
+
+            img {
+                width: 1200px;
+                height: 500px;
+            }
+        }
+    }
+}
+
+// _______________________________________adaptive________________________
+
+@media (max-width: 900px) {
+    .sliderSlickBlock {
+        position: relative;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(234, 224, 244);
+        width: 100%;
+
+        .sliderSlick {
+            margin-top: 50px;
+            width: 80%;
+            height: 200px;
+
+            div {
+                width: 100%;
+                height: 200px;
+
+                img {
+                    width: 100%;
+                    height: 200px;
+                }
+            }
+        }
+    }
+}

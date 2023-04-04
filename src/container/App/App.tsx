@@ -9,7 +9,8 @@ import { useAppDispatch } from 'redux/hooks'
 import { useEffect, useState } from 'react'
 import { fetchItems } from 'redux/CardListRedux/itemReducer'
 import ContactUs from 'pages/ContactUs/ContactUs'
-
+import CheckoutPage from 'pages/Checkout/CheckoutPage'
+import { useAppSelector } from 'redux/hooks'
 type Props = {}
 
 type PriceListData = {
@@ -33,6 +34,7 @@ const App = (props: Props) => {
         }))
     }
 
+    const productsInCart = useAppSelector((state) => state.productsInCart)
     const dispatch = useAppDispatch()
 
     useEffect(() => {
@@ -58,12 +60,15 @@ const App = (props: Props) => {
                     path="reservation"
                     element={
                         <Reservation
+                            productsInCart={productsInCart}
                             priceData={priceData}
                             checkToCart={checkToCart}
                             uncheckFromCart={uncheckFromCart}
                         />
                     }
                 />
+
+                <Route path="checkout" element={<CheckoutPage />} />
             </Routes>
             <Footer />
         </>

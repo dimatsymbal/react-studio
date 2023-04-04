@@ -1,17 +1,19 @@
 import { configureStore } from '@reduxjs/toolkit'
-import likeCounter from './LikesOnCards/likeDetector'
+import likeDetector from './LikesOnCards/likeDetector'
 import CartReducer from './CardListRedux/CartReducer'
 import itemReducer from './CardListRedux/itemReducer'
-import checkboxReducer from './PriceListRedux/checkboxDetector'
+import checkboxDetector from './PriceListRedux/checkboxDetector'
+import priceListReducer from './PriceListRedux/priceListReducer'
 
 //ми створили глобальне сховище
 
 export const store = configureStore({
     reducer: {
-        productsLikeState: likeCounter,
+        productsLikeState: likeDetector,
         productsInCart: CartReducer,
         items: itemReducer,
-        checkBoxState: checkboxReducer,
+        checkBoxState: checkboxDetector,
+        priceData: priceListReducer,
     },
 })
 

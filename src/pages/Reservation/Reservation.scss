@@ -3,4 +3,58 @@
     top: 105px;
     width: 100%;
     margin-bottom: 105px;
+
+    .checkoutLinkBlock {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #ebf3f5;
+        flex-direction: column;
+        height: 200px;
+        position: relative;
+        button {
+            border: 2px solid #5c8692;
+            background: #ffffff;
+            border-radius: 0px;
+            box-sizing: border-box;
+            height: 57px;
+            width: 248px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 20px;
+            text-align: center;
+            letter-spacing: 1.56px;
+            text-transform: uppercase;
+            margin-bottom: 100px;
+
+            .checkoutLink {
+                text-decoration: none;
+                color: #141414;
+            }
+        }
+
+        button:hover {
+            background-color: #accbd4;
+            transition: 0.4s;
+        }
+
+        p {
+            position: absolute;
+            top: 100px;
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 22px;
+            text-align: center;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: #5c8692;
+        }
+    }
 }

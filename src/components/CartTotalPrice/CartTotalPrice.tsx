@@ -18,18 +18,16 @@ type Props = {
 const CartTotalPrice = ({ productsInCart, priceData }: Props) => {
     const itemsArrey = useAppSelector((state) => state.items)
     const productsObject: ProductsObject = getProductsObject(itemsArrey)
+    const superFinalSum =
+        priceData.totalPrice +
+        Object.keys(productsInCart).reduce(
+            (total, articleId) =>
+                total + productsObject[parseInt(articleId)].price,
+            0
+        )
     return (
         <div className="totalPrice">
-            <h3>
-                Total:{' '}
-                {priceData.totalPrice +
-                    Object.keys(productsInCart).reduce(
-                        (total, articleId) =>
-                            total + productsObject[parseInt(articleId)].price,
-                        0
-                    )}
-                $
-            </h3>
+            <h3>Total: {superFinalSum}$</h3>
         </div>
     )
 }

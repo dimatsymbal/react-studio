@@ -58,7 +58,7 @@ export default function TemporaryDrawer() {
             </List>
             <List>
                 {['Contact Us'].map(() => (
-                    <MenuItem to="/contact">Contact Us</MenuItem>
+                    <MenuItem to="/contactus">Contact Us</MenuItem>
                 ))}
             </List>
             <Divider />

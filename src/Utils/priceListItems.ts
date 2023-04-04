@@ -142,7 +142,7 @@ const priceListItemsArrey: priceListItems[] = [
     },
     {
         id: 129,
-        title: 'Women`s haircut from',
+        title: 'Women`s haircut',
         paragraph:
             'Superior gray creates a rich, natural look with less fading.',
         price: 15,

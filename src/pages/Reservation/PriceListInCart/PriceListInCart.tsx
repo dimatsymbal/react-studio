@@ -23,7 +23,7 @@ const PriceListInCart = ({ checkToCart, uncheckFromCart }: Props) => {
             <div className="container">
                 <div className="row">
                     <div className="col">
-                        <div className="spisok">
+                        <div className="spisok" id="spisok1">
                             {priceListItemsArrey
                                 .filter(
                                     (product) =>
@@ -58,7 +58,7 @@ const PriceListInCart = ({ checkToCart, uncheckFromCart }: Props) => {
                         </div>
                     </div>
                     <div className="col">
-                        <div className="spisok">
+                        <div className="spisok" id="spisok2">
                             {priceListItemsArrey
                                 .filter(
                                     (product) =>
