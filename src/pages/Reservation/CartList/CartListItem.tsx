@@ -2,7 +2,7 @@ import { Card, Button } from '@mui/material'
 import { Items } from 'Utils/itemsArrey'
 import DeleteIcon from '@mui/icons-material/Delete'
 import { useAppDispatch } from 'redux/hooks'
-import { deleteProductToCart } from 'redux/CartReducer'
+import { deleteProductToCart } from 'redux/CardListRedux/CartReducer'
 import './CartListItem.scss'
 type Props = {
     item: Items

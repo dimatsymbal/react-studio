@@ -1,7 +1,11 @@
+import PopUp from 'components/PopUp/PopUp'
+import { useState } from 'react'
 import './InfoAndContacns.scss'
 
 type Props = {}
 const InfoAndContacns = (props: Props) => {
+    const [modalActive, setModalActive] = useState<boolean>(false)
+
     return (
         <div className="InfoAndContacns">
             <div className="container">
@@ -56,9 +60,15 @@ const InfoAndContacns = (props: Props) => {
                             </li>
                         </ul>
 
-                        <button className="workFormBtn">fill the form</button>
+                        <button
+                            onClick={() => setModalActive(true)}
+                            className="workFormBtn"
+                        >
+                            fill the form
+                        </button>
                     </div>
                 </div>
+                <PopUp active={modalActive} setActive={setModalActive} />
             </div>
         </div>
     )

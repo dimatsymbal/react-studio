@@ -6,8 +6,8 @@ import { Button } from '@mui/material'
 import ThumbUpOffAltIcon from '@mui/icons-material/ThumbUpOffAlt'
 import ThumbUpAltIcon from '@mui/icons-material/ThumbUpAlt'
 import { useAppDispatch, useAppSelector } from 'redux/hooks'
-import { addLike, removeLike } from 'redux/likeCounter'
-import { addProductToCart } from 'redux/CartReducer'
+import { addLike, removeLike } from 'redux/LikesOnCards/likeDetector'
+import { addProductToCart } from 'redux/CardListRedux/CartReducer'
 import { useState } from 'react'
 
 type Props = {

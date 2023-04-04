@@ -1,0 +1,35 @@
+.listForBtn {
+    margin-left: 30px;
+
+    .reservation_btn_header {
+        margin-left: 10px;
+        box-sizing: border-box;
+        height: 59px;
+        width: 201px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: #5c8692;
+        border: 2px solid #5c8692;
+        border-radius: 0px;
+        font-family: 'Manrope';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 1.4px;
+        text-transform: uppercase;
+        cursor: pointer;
+        color: white;
+
+        .reservationLink {
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+    .reservation_btn_header:hover {
+        transition: 0.4s;
+        background: #4b90a2;
+    }
+}

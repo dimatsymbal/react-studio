@@ -28,31 +28,6 @@ const CartList = ({ productsInCart }: Props) => {
                         </div>
                     ))}
                 </div>
-                {/* <div>
-                    Total:
-                    {Object.keys(productsInCart).reduce(
-                        (total, articleId) =>
-                            total +
-                            productsObject[parseInt(articleId)].price *
-                                productsInCart[parseInt(articleId)]
-                    )}
-                </div> */}
-
-                {/* <div className="row">
-                    <div className="col">
-                        <FormGroup>
-                            <FormControlLabel
-                                control={<Checkbox defaultChecked />}
-                                label="Label"
-                            />
-                            <FormControlLabel
-                                control={<Checkbox />}
-                                label="Label"
-                            />
-                        </FormGroup>
-                    </div>
-                    <div className="col">Column</div>
-                </div> */}
             </div>
         </div>
     )

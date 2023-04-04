@@ -81,6 +81,80 @@ const priceListItemsArrey: priceListItems[] = [
         price: 175,
         part: 'second',
     },
+    {
+        id: 121,
+        title: 'Manicure',
+        paragraph: 'A therapeutic massage that used for relieving muscles.',
+        price: 48,
+        part: 'third',
+    },
+    {
+        id: 122,
+        title: 'Hair styling',
+        paragraph: 'Perfect way to relieve all that unwanted stress in body.',
+        price: 18,
+        part: 'third',
+    },
+    {
+        id: 123,
+        title: 'Eyelash treatment',
+        paragraph:
+            'Get a relaxing massage focused on your feet and lower legs.',
+        price: 25,
+        part: 'third',
+    },
+    {
+        id: 124,
+        title: 'Pedicure',
+        paragraph:
+            'Superior gray creates a rich, natural look with less fading.',
+        price: 15,
+        part: 'third',
+    },
+    {
+        id: 125,
+        title: 'Fecial skin cleansing',
+        paragraph: '  Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+        price: 75,
+        part: 'third',
+    },
+    {
+        id: 126,
+        title: 'Men`s haircut',
+        paragraph: 'A therapeutic massage that used for relieving muscles.',
+        price: 48,
+        part: 'fourth',
+    },
+    {
+        id: 127,
+        title: 'Beard care',
+        paragraph: 'Perfect way to relieve all that unwanted stress in body.',
+        price: 18,
+        part: 'fourth',
+    },
+    {
+        id: 128,
+        title: 'Dyeing hair roots',
+        paragraph:
+            'Get a relaxing massage focused on your feet and lower legs.',
+        price: 25,
+        part: 'fourth',
+    },
+    {
+        id: 129,
+        title: 'Women`s haircut',
+        paragraph:
+            'Superior gray creates a rich, natural look with less fading.',
+        price: 15,
+        part: 'fourth',
+    },
+    {
+        id: 130,
+        title: 'depilation',
+        paragraph: '  Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+        price: 75,
+        part: 'fourth',
+    },
 ]
 
 export default priceListItemsArrey

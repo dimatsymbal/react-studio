@@ -8,8 +8,11 @@ type priceListItems = {
     price: number
 }
 
-type Props = {}
-const PriceListContent = (props: Props) => {
+type Props = {
+    checkToCart: (price: number) => void
+    uncheckFromCart: (price: number) => void
+}
+const PriceListContent = ({ checkToCart, uncheckFromCart }: Props) => {
     return (
         <>
             <div className="Price_list_content_block">
@@ -38,6 +41,10 @@ const PriceListContent = (props: Props) => {
                                                 title={title}
                                                 paragraph={paragraph}
                                                 price={price}
+                                                checkToCart={checkToCart}
+                                                uncheckFromCart={
+                                                    uncheckFromCart
+                                                }
                                             />
                                         </li>
                                     )
@@ -67,6 +74,10 @@ const PriceListContent = (props: Props) => {
                                                 title={title}
                                                 paragraph={paragraph}
                                                 price={price}
+                                                checkToCart={checkToCart}
+                                                uncheckFromCart={
+                                                    uncheckFromCart
+                                                }
                                             />
                                         </li>
                                     )
@@ -96,7 +107,7 @@ const PriceListContent = (props: Props) => {
                     <div className="col">
                         <ul className="spisok">
                             {priceListItemsArrey
-                                .filter((product) => product.part === 'first')
+                                .filter((product) => product.part === 'third')
                                 .map(
                                     ({
                                         id,
@@ -110,6 +121,10 @@ const PriceListContent = (props: Props) => {
                                                 title={title}
                                                 paragraph={paragraph}
                                                 price={price}
+                                                checkToCart={checkToCart}
+                                                uncheckFromCart={
+                                                    uncheckFromCart
+                                                }
                                             />
                                         </li>
                                     )
@@ -125,7 +140,7 @@ const PriceListContent = (props: Props) => {
                     <div className="col">
                         <ul className="spisok">
                             {priceListItemsArrey
-                                .filter((product) => product.part === 'second')
+                                .filter((product) => product.part === 'fourth')
                                 .map(
                                     ({
                                         id,
@@ -139,6 +154,10 @@ const PriceListContent = (props: Props) => {
                                                 title={title}
                                                 paragraph={paragraph}
                                                 price={price}
+                                                checkToCart={checkToCart}
+                                                uncheckFromCart={
+                                                    uncheckFromCart
+                                                }
                                             />
                                         </li>
                                     )

@@ -1,0 +1,133 @@
+.popUpBack {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 251;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.5s;
+
+    .workFormPopUp {
+        width: 350px;
+        height: 700px;
+        background-color: #ffffff;
+        transform: scale(0.5);
+        transition: 0.5s;
+
+        .headerOfModal {
+            width: 350px;
+            height: 50px;
+            background-color: rgb(70, 70, 72);
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            h3 {
+                font-family: 'Playfair Display';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 26px;
+                line-height: 36px;
+                letter-spacing: 0.312px;
+                color: #ffffff;
+                margin: 0;
+            }
+
+            .closePopUpBtn {
+                border: 0px;
+                background-color: rgb(255, 255, 255);
+                font-family: 'Manrope';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 20px;
+            }
+            .closePopUpBtn:hover {
+                background-color: #accbd4;
+                transition: 0.4s;
+            }
+        }
+    }
+
+    .workFormPopUp.active {
+        transform: scale(1);
+
+        .form {
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            input,
+            select {
+                background: #ffffff;
+                border: 2px solid #5c8692;
+                border-radius: 0px;
+                width: 330px;
+                margin-left: calc(50% - 330px / 2);
+                height: 40px;
+                margin-top: 20px;
+            }
+
+            textarea {
+                background: #ffffff;
+                border: 2px solid #5c8692;
+                border-radius: 0px;
+                width: 330px;
+                margin-left: calc(50% - 330px / 2);
+                height: 120px;
+                margin-top: 20px;
+            }
+
+            input,
+            select,
+            textarea::placeholder {
+                font-family: 'Manrope';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 32px;
+                color: #141414;
+            }
+
+            .addForm {
+                margin-top: 20px;
+                border: 2px solid #5c8692;
+                background: #ffffff;
+                border-radius: 0px;
+                box-sizing: border-box;
+                height: 37px;
+                width: 248px;
+                margin-left: calc(50% - 248px / 2);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Manrope';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 20px;
+                text-align: center;
+                letter-spacing: 1.56px;
+                text-transform: uppercase;
+                color: #141414;
+            }
+            .addForm:hover {
+                background-color: #accbd4;
+                transition: 0.4s;
+            }
+        }
+    }
+}
+
+.popUpBack.active {
+    opacity: 1;
+    pointer-events: all;
+}

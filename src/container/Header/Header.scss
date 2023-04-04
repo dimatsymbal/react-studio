@@ -22,7 +22,7 @@
         }
 
         .slideMenu {
-            visibility: hidden;
+            display: none;
         }
 
         .reservation_btn_header {
@@ -89,9 +89,9 @@
             }
 
             .slideMenu {
-                visibility: visible;
+                display: block;
                 position: absolute;
-                right: calc(50% - 35px / 2);
+                right: 5%;
                 width: 35px;
                 height: 35px;
                 border: 1px solid black;
@@ -105,24 +105,7 @@
             }
 
             .reservation_btn_header {
-                position: absolute;
-                height: 59px;
-                width: 121px;
-                font-weight: 400;
-                font-size: 11px;
-                line-height: 21px;
-                top: calc(50% - 59px / 2);
-                right: 5%;
-
-                .reservationLink {
-                    color: white;
-                    text-decoration: none;
-                }
-            }
-
-            .reservation_btn_header:hover {
-                transition: 0.4s;
-                background: #4b90a2;
+                display: none;
             }
         }
     }

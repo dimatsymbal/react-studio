@@ -1,0 +1,122 @@
+.PriceListInCart {
+    width: 100%;
+    background: #ebf3f5;
+    display: flex;
+    justify-content: center;
+
+    .container {
+        width: 1000px;
+        height: 100%;
+
+        .row {
+            visibility: visible;
+
+            .col {
+                visibility: visible;
+                width: 500px;
+
+                .spisok {
+                    visibility: visible;
+                    width: 500px;
+
+                    .spisok_element {
+                        width: 500px;
+                        height: 80px;
+                        margin-bottom: 10px;
+                        position: relative;
+
+                        .checkboxToCart {
+                            position: absolute;
+                            top: 25px;
+                            border: 0;
+                        }
+
+                        .element_of_price_list {
+                            visibility: visible;
+
+                            .titleInElementPriceList {
+                                position: absolute;
+                                top: 25px;
+                                left: 100px;
+                                font-family: 'Playfair Display';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 22px;
+                                line-height: 26px;
+                                letter-spacing: 0.264px;
+                                text-transform: capitalize;
+                                color: #141414;
+                            }
+
+                            .priceInElementPriceList {
+                                position: absolute;
+                                top: 25px;
+                                left: 320px;
+                                font-family: 'Manrope';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 18px;
+                                line-height: 27px;
+                                color: #555555;
+                            }
+                        }
+
+                        .paragraphInElementPriceList,
+                        hr {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// _____________________adaptive___________________________
+
+@media (max-width: 1000px) {
+    .PriceListInCart {
+        width: 100%;
+
+        .container {
+            width: 100%;
+
+            .row {
+                visibility: hidden;
+                width: 100%;
+
+                .col {
+                    visibility: hidden;
+                    width: 390px;
+
+                    .spisok {
+                        width: 390px;
+
+                        .spisok_element {
+                            width: 390px;
+
+                            .checkboxToCart {
+                                visibility: visible;
+                            }
+
+                            .element_of_price_list {
+                                width: 390px;
+
+                                .titleInElementPriceList {
+                                    position: absolute;
+                                    left: 45px;
+                                    font-size: 20px;
+                                }
+
+                                .priceInElementPriceList {
+                                    position: absolute;
+                                    left: 255px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
