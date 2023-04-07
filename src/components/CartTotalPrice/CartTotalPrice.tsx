@@ -17,6 +17,7 @@ type Props = {
 
 const CartTotalPrice = ({ productsInCart, priceData }: Props) => {
     const itemsArrey = useAppSelector((state) => state.items)
+
     const productsObject: ProductsObject = getProductsObject(itemsArrey)
     const superFinalSum =
         priceData.totalPrice +

@@ -1,5 +1,6 @@
 import priceListItemsArrey from 'Utils/priceListItems'
 import PriceListElement from 'pages/Our_services/PriceList/PriceListElement/PriceListElement'
+import { Link } from 'react-router-dom'
 
 type priceListItems = {
     id: number
@@ -8,11 +9,8 @@ type priceListItems = {
     price: number
 }
 
-type Props = {
-    checkToCart: (price: number) => void
-    uncheckFromCart: (price: number) => void
-}
-const PriceListContent = ({ checkToCart, uncheckFromCart }: Props) => {
+type Props = {}
+const PriceListContent = (props: Props) => {
     return (
         <>
             <div className="Price_list_content_block">
@@ -41,19 +39,17 @@ const PriceListContent = ({ checkToCart, uncheckFromCart }: Props) => {
                                                 title={title}
                                                 paragraph={paragraph}
                                                 price={price}
-                                                checkToCart={checkToCart}
-                                                uncheckFromCart={
-                                                    uncheckFromCart
-                                                }
                                             />
                                         </li>
                                     )
                                 )}
                         </ul>
 
-                        <button className="btn_under_list_in_col">
-                            GET AN APPOINTMENT
-                        </button>
+                        <Link className="reservationLink" to="/reservation">
+                            <button className="btn_under_list_in_col">
+                                GET AN APPOINTMENT
+                            </button>
+                        </Link>
                     </div>
                 </div>
                 <div className="row">
@@ -74,19 +70,17 @@ const PriceListContent = ({ checkToCart, uncheckFromCart }: Props) => {
                                                 title={title}
                                                 paragraph={paragraph}
                                                 price={price}
-                                                checkToCart={checkToCart}
-                                                uncheckFromCart={
-                                                    uncheckFromCart
-                                                }
                                             />
                                         </li>
                                     )
                                 )}
                         </ul>
 
-                        <button className="btn_under_list_in_col2">
-                            GET AN APPOINTMENT
-                        </button>
+                        <Link className="reservationLink" to="/reservation">
+                            <button className="btn_under_list_in_col2">
+                                GET AN APPOINTMENT
+                            </button>
+                        </Link>
                     </div>
                     <div className="col">
                         <img
@@ -121,19 +115,17 @@ const PriceListContent = ({ checkToCart, uncheckFromCart }: Props) => {
                                                 title={title}
                                                 paragraph={paragraph}
                                                 price={price}
-                                                checkToCart={checkToCart}
-                                                uncheckFromCart={
-                                                    uncheckFromCart
-                                                }
                                             />
                                         </li>
                                     )
                                 )}
                         </ul>
 
-                        <button className="btn_under_list_in_col">
-                            GET AN APPOINTMENT
-                        </button>
+                        <Link className="reservationLink" to="/reservation">
+                            <button className="btn_under_list_in_col">
+                                GET AN APPOINTMENT
+                            </button>
+                        </Link>
                     </div>
                 </div>
                 <div className="row">
@@ -154,19 +146,17 @@ const PriceListContent = ({ checkToCart, uncheckFromCart }: Props) => {
                                                 title={title}
                                                 paragraph={paragraph}
                                                 price={price}
-                                                checkToCart={checkToCart}
-                                                uncheckFromCart={
-                                                    uncheckFromCart
-                                                }
                                             />
                                         </li>
                                     )
                                 )}
                         </ul>
 
-                        <button className="btn_under_list_in_col2">
-                            GET AN APPOINTMENT
-                        </button>
+                        <Link className="reservationLink" to="/reservation">
+                            <button className="btn_under_list_in_col2">
+                                GET AN APPOINTMENT
+                            </button>
+                        </Link>
                     </div>
                     <div className="col">
                         <img

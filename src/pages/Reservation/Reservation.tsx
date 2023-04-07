@@ -11,26 +11,16 @@ type ProductsObject = {
     [id: number]: Items
 }
 
-type Props = {
-    priceData: {
-        totalPrice: number
-    }
+type Props = {}
+const Reservation = (props: Props) => {
+    const productsInCart = useAppSelector((state) => state.productsInCart)
 
-    productsInCart: {
-        [id: number]: number
-    }
+    const priceData = useAppSelector((state) => state.priceData)
 
-    checkToCart: (price: number) => void
-    uncheckFromCart: (price: number) => void
-}
-const Reservation = ({
-    productsInCart,
-    priceData,
-    checkToCart,
-    uncheckFromCart,
-}: Props) => {
     const itemsArrey = useAppSelector((state) => state.items)
+
     const productsObject: ProductsObject = getProductsObject(itemsArrey)
+
     const superFinalSum: number =
         priceData.totalPrice +
         Object.keys(productsInCart).reduce(
@@ -41,11 +31,7 @@ const Reservation = ({
 
     return (
         <div className="Reservation">
-            <PriceListInCart
-                productsInCart={productsInCart}
-                checkToCart={checkToCart}
-                uncheckFromCart={uncheckFromCart}
-            />
+            <PriceListInCart productsInCart={productsInCart} />
             <CartList productsInCart={productsInCart} />
             <CartTotalPrice
                 productsInCart={productsInCart}

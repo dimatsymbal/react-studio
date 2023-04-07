@@ -1,6 +1,11 @@
-.titleInElementPriceList:hover {
-    transition: 0.4s;
-    text-decoration: underline;
-    color: #141414;
-    cursor: pointer;
+.uniqeProductLink {
+    text-decoration: none;
+
+    .titleInElementPriceList {
+        text-decoration: none;
+    }
+    .titleInElementPriceList:hover {
+        transition: 0.5s;
+        text-decoration: underline;
+    }
 }

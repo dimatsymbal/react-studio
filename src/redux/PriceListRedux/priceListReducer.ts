@@ -1,4 +1,4 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 
 type PriceListData = {
     totalPrice: number
@@ -11,9 +11,16 @@ export const initialState: PriceListData = {
 export const priceDataSlice = createSlice({
     name: 'priceData',
     initialState,
-    reducers: {},
+    reducers: {
+        checkToCart: (state, action: PayloadAction<number>) => {
+            state.totalPrice += action.payload
+        },
+        uncheckFromCart: (state, action: PayloadAction<number>) => {
+            state.totalPrice -= action.payload
+        },
+    },
 })
 
-// export const { addProductToCart, deleteProductToCart } = cartSlice.actions
+export const { checkToCart, uncheckFromCart } = priceDataSlice.actions
 
 export default priceDataSlice.reducer

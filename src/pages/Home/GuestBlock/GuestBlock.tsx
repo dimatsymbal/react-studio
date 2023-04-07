@@ -1,6 +1,7 @@
 import GuestBlockPhoto from 'components/GuestBlockPhoto/GuestBlockPhoto'
 import WarningLogo from 'components/WarningLogo/WarningLogo'
 import './GuestBlock.scss'
+import { Link } from 'react-router-dom'
 type Props = {}
 const GuestBlock = (props: Props) => {
     return (
@@ -17,9 +18,12 @@ const GuestBlock = (props: Props) => {
                         can help you return the favor in a way that benefits
                         both your physical and mental wellness.
                     </p>
-                    <button className="reservation_btn_guest_block">
-                        Make a Reservation
-                    </button>
+
+                    <Link to="/services">
+                        <button className="reservation_btn_guest_block">
+                            What we provide?
+                        </button>
+                    </Link>
                 </div>
 
                 <div className="right">

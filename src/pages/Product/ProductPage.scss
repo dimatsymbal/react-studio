@@ -1,0 +1,125 @@
+.ProductPage {
+    min-height: 800px;
+    width: 100%;
+    background: #f6e4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .productPageContainer {
+        width: 1200px;
+        min-height: 800px;
+        display: flex;
+        flex-direction: column;
+
+        img {
+            width: 1000px;
+            height: 500px;
+            margin-left: calc(50% - 1000px / 2);
+            margin-top: 105px;
+            border: 14px solid rgb(239, 229, 229);
+        }
+
+        h4 {
+            font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 35px;
+            line-height: 58px;
+            text-align: center;
+            letter-spacing: 0.45px;
+            color: #141414;
+        }
+
+        .basicParagraph {
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 27px;
+            text-align: center;
+            color: #555555;
+        }
+
+        .uniqueParagraph1 {
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 27px;
+            text-align: justify;
+            color: #555555;
+        }
+
+        h6 {
+            font-family: 'Playfair Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 58px;
+            text-align: justify;
+            letter-spacing: 0.45px;
+            color: #141414;
+        }
+
+        .uniqueParagraph2 {
+            font-family: 'Manrope';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 27px;
+            text-align: justify;
+            color: #555555;
+        }
+
+        .row {
+            width: 1200px;
+
+            .col {
+                width: 550px;
+                height: 760px;
+
+                .uniqueParagraph3 {
+                    font-family: 'Manrope';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 27px;
+                    text-align: justify;
+                    color: #555555;
+                }
+
+                img {
+                    width: 390px;
+                    height: 360px;
+                    margin-top: 0px;
+                    margin-left: calc(50% - 390px / 2);
+                }
+
+                .uniqueParagraph4 {
+                    font-family: 'Manrope';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 27px;
+                    text-align: justify;
+                    color: #555555;
+                }
+            }
+        }
+
+        .finalPart {
+            width: 1200px;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .checkboxToCart {
+                border: 0;
+                background-color: #f6e4f6;
+            }
+        }
+    }
+}

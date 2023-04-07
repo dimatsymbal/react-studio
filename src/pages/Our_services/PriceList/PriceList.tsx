@@ -1,19 +1,13 @@
 import './PriceList.scss'
 import PriceListContent from 'components/PriceListContent/PriceListContent'
 
-type Props = {
-    checkToCart: (price: number) => void
-    uncheckFromCart: (price: number) => void
-}
+type Props = {}
 
-const PriceList = ({ checkToCart, uncheckFromCart }: Props) => {
+const PriceList = (props: Props) => {
     return (
         <div className="Price_list">
             <h2 className="title_in_Price_list">Our services</h2>
-            <PriceListContent
-                checkToCart={checkToCart}
-                uncheckFromCart={uncheckFromCart}
-            />
+            <PriceListContent />
         </div>
     )
 }
