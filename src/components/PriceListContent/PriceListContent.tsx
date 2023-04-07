@@ -9,11 +9,8 @@ type priceListItems = {
     price: number
 }
 
-type Props = {
-    checkToCart: (price: number) => void
-    uncheckFromCart: (price: number) => void
-}
-const PriceListContent = ({ checkToCart, uncheckFromCart }: Props) => {
+type Props = {}
+const PriceListContent = (props: Props) => {
     return (
         <>
             <div className="Price_list_content_block">
@@ -42,10 +39,6 @@ const PriceListContent = ({ checkToCart, uncheckFromCart }: Props) => {
                                                 title={title}
                                                 paragraph={paragraph}
                                                 price={price}
-                                                checkToCart={checkToCart}
-                                                uncheckFromCart={
-                                                    uncheckFromCart
-                                                }
                                             />
                                         </li>
                                     )
@@ -77,10 +70,6 @@ const PriceListContent = ({ checkToCart, uncheckFromCart }: Props) => {
                                                 title={title}
                                                 paragraph={paragraph}
                                                 price={price}
-                                                checkToCart={checkToCart}
-                                                uncheckFromCart={
-                                                    uncheckFromCart
-                                                }
                                             />
                                         </li>
                                     )
@@ -126,10 +115,6 @@ const PriceListContent = ({ checkToCart, uncheckFromCart }: Props) => {
                                                 title={title}
                                                 paragraph={paragraph}
                                                 price={price}
-                                                checkToCart={checkToCart}
-                                                uncheckFromCart={
-                                                    uncheckFromCart
-                                                }
                                             />
                                         </li>
                                     )
@@ -161,10 +146,6 @@ const PriceListContent = ({ checkToCart, uncheckFromCart }: Props) => {
                                                 title={title}
                                                 paragraph={paragraph}
                                                 price={price}
-                                                checkToCart={checkToCart}
-                                                uncheckFromCart={
-                                                    uncheckFromCart
-                                                }
                                             />
                                         </li>
                                     )

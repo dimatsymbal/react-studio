@@ -13,11 +13,8 @@ type Props = {
     productsInCart: {
         [id: number]: number
     }
-
-    checkToCart: (price: number) => void
-    uncheckFromCart: (price: number) => void
 }
-const PriceListInCart = ({ checkToCart, uncheckFromCart }: Props) => {
+const PriceListInCart = (props: Props) => {
     return (
         <div className="PriceListInCart">
             <div className="container">
@@ -47,10 +44,6 @@ const PriceListInCart = ({ checkToCart, uncheckFromCart }: Props) => {
                                                 title={title}
                                                 paragraph={paragraph}
                                                 price={price}
-                                                checkToCart={checkToCart}
-                                                uncheckFromCart={
-                                                    uncheckFromCart
-                                                }
                                             />
                                         </div>
                                     )
@@ -81,10 +74,6 @@ const PriceListInCart = ({ checkToCart, uncheckFromCart }: Props) => {
                                                 title={title}
                                                 paragraph={paragraph}
                                                 price={price}
-                                                checkToCart={checkToCart}
-                                                uncheckFromCart={
-                                                    uncheckFromCart
-                                                }
                                             />
                                         </div>
                                     )

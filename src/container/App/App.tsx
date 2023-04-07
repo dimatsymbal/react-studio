@@ -10,32 +10,10 @@ import { useEffect, useState } from 'react'
 import { fetchItems } from 'redux/CardListRedux/itemReducer'
 import ContactUs from 'pages/ContactUs/ContactUs'
 import CheckoutPage from 'pages/Checkout/CheckoutPage'
-import { useAppSelector } from 'redux/hooks'
 import ProductPage from 'pages/Product/ProductPage'
 type Props = {}
 
-type PriceListData = {
-    totalPrice: number
-}
-
 const App = (props: Props) => {
-    const [priceData, setPriceData] = useState<PriceListData>({
-        totalPrice: 0,
-    })
-
-    const checkToCart = (price: number) => {
-        setPriceData((prevState) => ({
-            totalPrice: prevState.totalPrice + price,
-        }))
-    }
-
-    const uncheckFromCart = (price: number) => {
-        setPriceData((prevState) => ({
-            totalPrice: prevState.totalPrice - price,
-        }))
-    }
-
-    const productsInCart = useAppSelector((state) => state.productsInCart)
     const dispatch = useAppDispatch()
 
     useEffect(() => {
@@ -47,38 +25,11 @@ const App = (props: Props) => {
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="about" element={<About />} />
-                <Route
-                    path="services"
-                    element={
-                        <OurServices
-                            checkToCart={checkToCart}
-                            uncheckFromCart={uncheckFromCart}
-                        />
-                    }
-                />
+                <Route path="services" element={<OurServices />} />
                 <Route path="contactus" element={<ContactUs />} />
-                <Route
-                    path="reservation"
-                    element={
-                        <Reservation
-                            productsInCart={productsInCart}
-                            priceData={priceData}
-                            checkToCart={checkToCart}
-                            uncheckFromCart={uncheckFromCart}
-                        />
-                    }
-                />
-
+                <Route path="reservation" element={<Reservation />} />
                 <Route path="checkout" element={<CheckoutPage />} />
-                <Route
-                    path="/products/:id"
-                    element={
-                        <ProductPage
-                            checkToCart={checkToCart}
-                            uncheckFromCart={uncheckFromCart}
-                        />
-                    }
-                />
+                <Route path="/products/:id" element={<ProductPage />} />
             </Routes>
             <Footer />
         </>

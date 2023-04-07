@@ -9,19 +9,18 @@ import CheckBoxOutlineBlankIcon from '@mui/icons-material/CheckBoxOutlineBlank'
 import CheckBoxIcon from '@mui/icons-material/CheckBox'
 import { useAppDispatch, useAppSelector } from 'redux/hooks'
 import { addCheck, removeCheck } from 'redux/PriceListRedux/checkboxDetector'
+import {
+    checkToCart,
+    uncheckFromCart,
+} from 'redux/PriceListRedux/priceListReducer'
 
 type Props = {
     productsObject?: {
         [id: number]: priceListItems
     }
-
-    checkToCart: (price: number) => void
-    uncheckFromCart: (price: number) => void
 }
 const ProductPage = ({
     productsObject = getListObject(priceListItemsArrey),
-    checkToCart,
-    uncheckFromCart,
 }: Props) => {
     const { id } = useParams()
 
@@ -90,11 +89,15 @@ const ProductPage = ({
                                   )
 
                             isChecked
-                                ? uncheckFromCart(
-                                      productsObject[parseInt(id!)].price
+                                ? dispatch(
+                                      uncheckFromCart(
+                                          productsObject[parseInt(id!)].price
+                                      )
                                   )
-                                : checkToCart(
-                                      productsObject[parseInt(id!)].price
+                                : dispatch(
+                                      checkToCart(
+                                          productsObject[parseInt(id!)].price
+                                      )
                                   )
                         }}
                     >
