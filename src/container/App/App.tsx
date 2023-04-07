@@ -11,6 +11,7 @@ import { fetchItems } from 'redux/CardListRedux/itemReducer'
 import ContactUs from 'pages/ContactUs/ContactUs'
 import CheckoutPage from 'pages/Checkout/CheckoutPage'
 import { useAppSelector } from 'redux/hooks'
+import ProductPage from 'pages/Product/ProductPage'
 type Props = {}
 
 type PriceListData = {
@@ -69,6 +70,15 @@ const App = (props: Props) => {
                 />
 
                 <Route path="checkout" element={<CheckoutPage />} />
+                <Route
+                    path="/products/:id"
+                    element={
+                        <ProductPage
+                            checkToCart={checkToCart}
+                            uncheckFromCart={uncheckFromCart}
+                        />
+                    }
+                />
             </Routes>
             <Footer />
         </>
