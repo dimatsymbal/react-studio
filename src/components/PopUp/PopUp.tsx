@@ -107,13 +107,13 @@ const PopUp = ({ active, setActive }: Props) => {
             >
                 <form action="" onSubmit={onSend} className="form">
                     <div className="headerOfModal">
-                        <h3>Add theacher</h3>
-                        <button
+                        <h3>Please fill the form</h3>
+                        {/* <button
                             onClick={() => setActive(false)}
                             className="closePopUpBtn"
                         >
                             <CloseIcon />
-                        </button>
+                        </button> */}
                     </div>
 
                     <div className="place">

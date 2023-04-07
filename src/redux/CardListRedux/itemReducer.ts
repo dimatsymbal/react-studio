@@ -17,7 +17,22 @@ export const fetchItems = createAsyncThunk<Items[], undefined>(
 export const itemsSlice = createSlice({
     name: 'items',
     initialState,
-    reducers: {},
+    reducers: {
+        changeSortTypeOnPriceDown: (action) =>
+            action.sort((x, y) => x.price - y.price),
+
+        changeSortTypeOnPriceUp: (action) =>
+            action.sort((x, y) => y.price - x.price),
+
+        changeSortTypeOnLikesUp: (action) =>
+            action.sort((x, y) => y.likes - x.likes),
+
+        changeSortTypeOnLikesDown: (action) =>
+            action.sort((x, y) => x.likes - y.likes),
+
+        changeSortTypeOnAlphabet: (action) =>
+            action.sort((x, y) => x.title.localeCompare(y.title)),
+    },
     extraReducers(builder) {
         builder.addCase(fetchItems.fulfilled, (state, action) => {
             return (state = action.payload)
@@ -25,4 +40,11 @@ export const itemsSlice = createSlice({
     },
 })
 
+export const {
+    changeSortTypeOnPriceUp,
+    changeSortTypeOnPriceDown,
+    changeSortTypeOnLikesDown,
+    changeSortTypeOnLikesUp,
+    changeSortTypeOnAlphabet,
+} = itemsSlice.actions
 export default itemsSlice.reducer

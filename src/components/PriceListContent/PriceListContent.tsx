@@ -1,5 +1,6 @@
 import priceListItemsArrey from 'Utils/priceListItems'
 import PriceListElement from 'pages/Our_services/PriceList/PriceListElement/PriceListElement'
+import { Link } from 'react-router-dom'
 
 type priceListItems = {
     id: number
@@ -51,9 +52,11 @@ const PriceListContent = ({ checkToCart, uncheckFromCart }: Props) => {
                                 )}
                         </ul>
 
-                        <button className="btn_under_list_in_col">
-                            GET AN APPOINTMENT
-                        </button>
+                        <Link className="reservationLink" to="/reservation">
+                            <button className="btn_under_list_in_col">
+                                GET AN APPOINTMENT
+                            </button>
+                        </Link>
                     </div>
                 </div>
                 <div className="row">
@@ -84,9 +87,11 @@ const PriceListContent = ({ checkToCart, uncheckFromCart }: Props) => {
                                 )}
                         </ul>
 
-                        <button className="btn_under_list_in_col2">
-                            GET AN APPOINTMENT
-                        </button>
+                        <Link className="reservationLink" to="/reservation">
+                            <button className="btn_under_list_in_col2">
+                                GET AN APPOINTMENT
+                            </button>
+                        </Link>
                     </div>
                     <div className="col">
                         <img
@@ -131,9 +136,11 @@ const PriceListContent = ({ checkToCart, uncheckFromCart }: Props) => {
                                 )}
                         </ul>
 
-                        <button className="btn_under_list_in_col">
-                            GET AN APPOINTMENT
-                        </button>
+                        <Link className="reservationLink" to="/reservation">
+                            <button className="btn_under_list_in_col">
+                                GET AN APPOINTMENT
+                            </button>
+                        </Link>
                     </div>
                 </div>
                 <div className="row">
@@ -164,9 +171,11 @@ const PriceListContent = ({ checkToCart, uncheckFromCart }: Props) => {
                                 )}
                         </ul>
 
-                        <button className="btn_under_list_in_col2">
-                            GET AN APPOINTMENT
-                        </button>
+                        <Link className="reservationLink" to="/reservation">
+                            <button className="btn_under_list_in_col2">
+                                GET AN APPOINTMENT
+                            </button>
+                        </Link>
                     </div>
                     <div className="col">
                         <img

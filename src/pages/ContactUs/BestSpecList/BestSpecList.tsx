@@ -66,22 +66,6 @@ const BestSpecList = (props: Props) => {
                             </div>
                         </Card>
                     </div>
-                    <div className="col">
-                        <Card className="card">
-                            <img src="/images/specialist4.jpg" alt="" />
-                            <h4 className="specialistName">Sophia Kona</h4>
-                            <p>Stylist</p>
-                            <hr />
-                            <div className="socialButtonsGroup">
-                                <Button>
-                                    <InstagramIcon />
-                                </Button>
-                                <Button>
-                                    <FacebookIcon />
-                                </Button>
-                            </div>
-                        </Card>
-                    </div>
                 </div>
             </div>
         </div>
