@@ -1,5 +1,4 @@
 import './PopUp.scss'
-import CloseIcon from '@mui/icons-material/Close'
 import { useState } from 'react'
 type Props = {
     active: any
