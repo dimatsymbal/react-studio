@@ -42,41 +42,28 @@ const CardList = (props: Props) => {
                 <ul className="dropdown-menu">
                     <li>
                         <button
+                            className="drop_btn"
                             onClick={() => dispatch(changeSortTypeOnPriceUp())}
                         >
-                            price dorogo
+                            from expensive to cheap
                         </button>
                     </li>
                     <li>
                         <button
+                            className="drop_btn"
                             onClick={() =>
                                 dispatch(changeSortTypeOnPriceDown())
                             }
                         >
-                            price chip
+                            from cheap to expensive
                         </button>
                     </li>
                     <li>
                         <button
+                            className="drop_btn"
                             onClick={() => dispatch(changeSortTypeOnLikesUp())}
                         >
-                            likes mbogo
-                        </button>
-                    </li>
-                    <li>
-                        <button
-                            onClick={() =>
-                                dispatch(changeSortTypeOnLikesDown())
-                            }
-                        >
-                            likes malo
-                        </button>
-                    </li>
-                    <li>
-                        <button
-                            onClick={() => dispatch(changeSortTypeOnAlphabet())}
-                        >
-                            likes alphabet
+                            by likes
                         </button>
                     </li>
                 </ul>
