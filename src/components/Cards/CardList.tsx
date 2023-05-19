@@ -2,8 +2,6 @@ import CardsListItem from './CardsListItem'
 import './CardList.scss'
 import { useAppDispatch, useAppSelector } from 'redux/hooks'
 import {
-    changeSortTypeOnAlphabet,
-    changeSortTypeOnLikesDown,
     changeSortTypeOnLikesUp,
     changeSortTypeOnPriceDown,
     changeSortTypeOnPriceUp,
