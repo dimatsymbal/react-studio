@@ -42,7 +42,7 @@
 
             .carouselReviewsBlock {
                 width: 700px;
-                min-height: 250px;
+                height: 350px;
                 position: relative;
                 left: calc(50% - 700px / 2);
                 top: 50px;
@@ -235,6 +235,7 @@
                 .carouselReviewsBlock {
                     width: 390px;
                     left: calc(50% - 390px / 2);
+                    height: 300px;
 
                     .carouselReviewsBlockItem {
                         width: 390px;
