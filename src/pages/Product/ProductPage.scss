@@ -109,7 +109,7 @@
         }
 
         .finalPart {
-            width: 1200px;
+            width: 100%;
             height: 200px;
             display: flex;
             flex-direction: column;
@@ -119,6 +119,61 @@
             .checkboxToCart {
                 border: 0;
                 background-color: #f6e4f6;
+            }
+        }
+    }
+}
+
+// _______________________________________adaptive________________________
+
+@media (max-width: 1250px) {
+    .ProductPage {
+        width: 100%;
+        padding: 10px;
+
+        .productPageContainer {
+            width: 100%;
+
+            img {
+                width: 380px;
+                margin-left: calc(50% - 380px / 2);
+            }
+
+            .row {
+                width: 1200px;
+                display: none;
+
+                .col {
+                    width: 550px;
+                    height: 760px;
+
+                    .uniqueParagraph3 {
+                        font-family: 'Manrope';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 27px;
+                        text-align: justify;
+                        color: #555555;
+                    }
+
+                    img {
+                        width: 390px;
+                        height: 360px;
+                        margin-top: 0px;
+                        margin-left: calc(50% - 390px / 2);
+                    }
+
+                    .uniqueParagraph4 {
+                        font-family: 'Manrope';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 27px;
+                        text-align: justify;
+                        color: #555555;
+                    }
+                }
             }
         }
     }

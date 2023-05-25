@@ -77,6 +77,7 @@
             justify-content: center;
 
             .col {
+                width: 390px;
                 display: flex;
                 justify-content: center;
             }
@@ -98,6 +99,21 @@
             font-size: 30px;
             line-height: normal;
             text-align: center;
+        }
+
+        .block_with_cards {
+            padding-top: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .row {
+                width: 390px;
+
+                .col {
+                    padding: 0px;
+                }
+            }
         }
     }
 }

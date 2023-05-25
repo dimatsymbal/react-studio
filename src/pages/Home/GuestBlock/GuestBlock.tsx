@@ -20,7 +20,7 @@ const GuestBlock = (props: Props) => {
             <div className="container_guides_block">
                 <div
                     className="left"
-                    data-aos={isMobile ? 'fade-down' : 'fade-right'}
+                    data-aos={isMobile ? '' : 'fade-right'}
                     data-aos-duration="1000"
                 >
                     <WarningLogo />
