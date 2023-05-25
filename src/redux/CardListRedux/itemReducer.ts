@@ -26,12 +26,6 @@ export const itemsSlice = createSlice({
 
         changeSortTypeOnLikesUp: (action) =>
             action.sort((x, y) => y.likes - x.likes),
-
-        changeSortTypeOnLikesDown: (action) =>
-            action.sort((x, y) => x.likes - y.likes),
-
-        changeSortTypeOnAlphabet: (action) =>
-            action.sort((x, y) => x.title.localeCompare(y.title)),
     },
     extraReducers(builder) {
         builder.addCase(fetchItems.fulfilled, (state, action) => {
@@ -43,8 +37,7 @@ export const itemsSlice = createSlice({
 export const {
     changeSortTypeOnPriceUp,
     changeSortTypeOnPriceDown,
-    changeSortTypeOnLikesDown,
+
     changeSortTypeOnLikesUp,
-    changeSortTypeOnAlphabet,
 } = itemsSlice.actions
 export default itemsSlice.reducer
