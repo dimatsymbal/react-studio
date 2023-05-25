@@ -1,12 +1,27 @@
 import './LifestyleBlock.scss'
 import LifestyleBlockWoman from 'components/LifestyleBlockPhoto/LifestyleBlockWoman'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useMediaQuery } from 'react-responsive'
+//библиотекой react-responsive для определения
+//текущего состояния медиа-запроса внутри вашего компонента React.
 
 type Props = {}
 const LifestyleBlock = (props: Props) => {
+    AOS.init()
+    // В этом примере мы используем хук useMediaQuery из библиотеки react-responsive
+    // для определения состояния медиа-запроса maxWidth: 900. Значение isMobile будет true,
+    // если ширина окна меньше 900 пикселей, и false в противном случае.
+    const isMobile = useMediaQuery({ maxWidth: 900 })
+
     return (
         <div className="lifestyle_block">
             <div className="container_lifestyle_block">
-                <div className="left">
+                <div
+                    className="left"
+                    data-aos={isMobile ? 'fade-down' : 'fade-left'}
+                    data-aos-duration="1000"
+                >
                     <p className="subtitle_lifestyle_block">Take Your Care</p>
                     <h2 className="title_lifestyle_block">
                         Elevate Your Lifestyle by Bring Balance and Well Being
@@ -43,8 +58,17 @@ const LifestyleBlock = (props: Props) => {
                     </div>
                 </div>
 
-                <div className="right">
+                <div
+                    className="right"
+                    data-aos={isMobile ? 'fade-down' : 'fade-right'}
+                    data-aos-duration="1000"
+                >
                     <LifestyleBlockWoman />
+                    <img
+                        className="lifestyleBlockBack"
+                        src="/images/lifestyleBlockBack.png"
+                        alt="lifestyleBlockBack"
+                    />
                 </div>
             </div>
         </div>

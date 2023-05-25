@@ -1,10 +1,18 @@
 import Carousel from 'react-bootstrap/Carousel'
 import './SliderComp.scss'
 import './slider-hover.css'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 type Props = {}
 const SliderComp = (props: Props) => {
+    AOS.init()
     return (
-        <Carousel className="carousel">
+        <Carousel
+            className="carousel"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+        >
             <Carousel.Item className="slider_item">
                 <img
                     className="slider_img"

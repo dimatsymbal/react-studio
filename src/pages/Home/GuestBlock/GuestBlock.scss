@@ -2,18 +2,18 @@
     position: relative;
     background: #ebf3f5;
     width: 100%;
-    min-height: 885px;
+    min-height: 815px;
     display: flex;
     justify-content: center;
 
     .container_guides_block {
         width: 1200px;
-        min-height: 885px;
+        min-height: 815px;
         display: flex;
         flex-direction: row;
 
         .left {
-            height: 885px;
+            height: 815px;
             width: 50%;
             position: relative;
 
@@ -63,7 +63,7 @@
             }
             .reservation_btn_guest_block {
                 position: absolute;
-                bottom: 229px;
+                bottom: 129px;
                 left: 0px;
                 box-sizing: border-box;
                 width: 238px;
@@ -85,20 +85,30 @@
             }
             .reservation_btn_guest_block:hover {
                 transition: 0.4s;
-                background: #4b90a2;
+                background: #48a8c0;
             }
         }
 
         .right {
-            height: 885px;
+            height: 815px;
             display: flex;
-            justify-content: flex-end;
+            justify-content: space-between;
             width: 50%;
             position: relative;
 
             .guest_block_woman_logo {
                 position: absolute;
                 top: 170px;
+                z-index: 2;
+            }
+
+            .guestBlockBack {
+                position: absolute;
+                top: 140px;
+                z-index: 1;
+                left: 80px;
+                max-width: 550px;
+                max-height: 645px;
             }
         }
     }
@@ -180,7 +190,7 @@
             .right {
                 width: 100%;
                 text-align: center;
-                margin: auto;
+                margin-top: 40px;
                 height: 400px;
                 display: flex;
                 align-items: center;
@@ -189,6 +199,13 @@
                     width: 350px;
                     left: calc(50% - 350px / 2 - 0.1px);
                     top: -1px;
+                }
+
+                .guestBlockBack {
+                    width: 300px;
+                    height: 360px;
+                    left: 80px;
+                    top: -5px;
                 }
             }
         }

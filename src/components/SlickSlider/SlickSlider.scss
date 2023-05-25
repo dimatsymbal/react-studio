@@ -1,13 +1,12 @@
 .sliderSlickBlock {
     position: relative;
-    height: 700px;
+    height: 500px;
     display: flex;
     justify-content: center;
     background-color: rgb(234, 224, 244);
     width: 100%;
 
     .sliderSlick {
-        margin-top: 105px;
         width: 1200px;
         height: 500px;
 
@@ -28,15 +27,14 @@
 @media (max-width: 900px) {
     .sliderSlickBlock {
         position: relative;
-        height: 300px;
+        height: 200px;
         display: flex;
         justify-content: center;
         background-color: rgb(234, 224, 244);
         width: 100%;
 
         .sliderSlick {
-            margin-top: 50px;
-            width: 80%;
+            width: 85%;
             height: 200px;
 
             div {

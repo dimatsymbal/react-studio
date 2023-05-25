@@ -1,6 +1,9 @@
 import './Reviews.scss'
 import Carousel from 'react-bootstrap/Carousel'
 import { useState } from 'react'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useMediaQuery } from 'react-responsive'
 
 type Review = {
     name: string
@@ -9,6 +12,9 @@ type Review = {
 }
 type Props = {}
 const Reviews = (props: Props) => {
+    const isMobile = useMediaQuery({ maxWidth: 900 })
+    AOS.init()
+
     const arrReviews: Review[] = [
         {
             name: 'James Williams',
@@ -82,7 +88,11 @@ const Reviews = (props: Props) => {
                 <h6 className="subtitles">Testimonials</h6>
                 <h2>What our Customers says...</h2>
 
-                <div className="reviewsBlock">
+                <div
+                    className="reviewsBlock"
+                    data-aos={isMobile ? 'fade-down' : 'fade-right'}
+                    data-aos-duration="1000"
+                >
                     <Carousel
                         variant="dark"
                         className="carouselReviewsBlock"
@@ -115,7 +125,11 @@ const Reviews = (props: Props) => {
                     </Carousel>
                 </div>
 
-                <div className="form">
+                <div
+                    className="form"
+                    data-aos={isMobile ? 'fade-down' : 'fade-left'}
+                    data-aos-duration="1000"
+                >
                     <form action="" onSubmit={onSend}>
                         <h2>Please leave a review</h2>
 

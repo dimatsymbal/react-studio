@@ -4,14 +4,25 @@ import TwitterIcon from '@mui/icons-material/Twitter'
 import InstagramIcon from '@mui/icons-material/Instagram'
 import FacebookIcon from '@mui/icons-material/Facebook'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useMediaQuery } from 'react-responsive'
 import './BestSpecList.scss'
+
 type Props = {}
 const BestSpecList = (props: Props) => {
+    AOS.init()
+    const isMobile = useMediaQuery({ maxWidth: 900 })
+
     return (
         <div className="BestSpecList">
             <div className="container">
                 <h2>Our best specialists</h2>
-                <div className="row">
+                <div
+                    className="row"
+                    data-aos="fade-down"
+                    data-aos-duration="1000"
+                >
                     <div className="col">
                         <Card className="card">
                             <img src="/images/specialist1.jpg" alt="" />

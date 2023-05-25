@@ -1,20 +1,34 @@
 import PopUp from 'components/PopUp/PopUp'
 import { useState } from 'react'
 import './InfoAndContacns.scss'
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useMediaQuery } from 'react-responsive'
 
 type Props = {}
 const InfoAndContacns = (props: Props) => {
     const [modalActive, setModalActive] = useState<boolean>(false)
+
+    AOS.init()
+    const isMobile = useMediaQuery({ maxWidth: 900 })
 
     return (
         <div className="InfoAndContacns">
             <div className="container">
                 <h2>Work Details</h2>
                 <div className="row">
-                    <div className="col">
+                    <div
+                        className="col"
+                        data-aos={isMobile ? 'fade-down' : 'fade-right'}
+                        data-aos-duration="1000"
+                    >
                         <img src="/images/workDetails.jpg" alt="workDetails" />
                     </div>
-                    <div className="col">
+                    <div
+                        className="col"
+                        data-aos={isMobile ? 'fade-down' : 'fade-left'}
+                        data-aos-duration="1000"
+                    >
                         <h2>
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit.

@@ -2,7 +2,7 @@
     position: relative;
     top: 0px;
     width: 100%;
-    min-height: 836px;
+    min-height: 936px;
 
     .subtitle_Checkbox_block {
         position: relative;
@@ -108,10 +108,11 @@
             width: 100%;
 
             .row {
-                width: 90%;
+                padding-left: 20px;
+                width: 80%;
 
                 .col {
-                    width: 90%;
+                    width: 80%;
                 }
             }
         }
