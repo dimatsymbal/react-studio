@@ -6,13 +6,11 @@ import FacebookIcon from '@mui/icons-material/Facebook'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import AOS from 'aos'
 import 'aos/dist/aos.css'
-import { useMediaQuery } from 'react-responsive'
 import './BestSpecList.scss'
 
 type Props = {}
 const BestSpecList = (props: Props) => {
     AOS.init()
-    const isMobile = useMediaQuery({ maxWidth: 900 })
 
     return (
         <div className="BestSpecList">
