@@ -11,6 +11,7 @@ import { fetchItems } from 'redux/CardListRedux/itemReducer'
 import ContactUs from 'pages/ContactUs/ContactUs'
 import CheckoutPage from 'pages/Checkout/CheckoutPage'
 import ProductPage from 'pages/Product/ProductPage'
+import ScrollToTop from 'Utils/scrollToTop'
 type Props = {}
 
 const App = (props: Props) => {
@@ -22,6 +23,7 @@ const App = (props: Props) => {
     return (
         <>
             <Header />
+            <ScrollToTop />
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="about" element={<About />} />
